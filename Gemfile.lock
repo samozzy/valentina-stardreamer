@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/tmm1/http_parser.rb.git
+  revision: 225354b3d94d8d76774bac5bb2ac0139dd75662c
+  specs:
+    http_parser.rb (0.6.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,7 +46,6 @@ GEM
     execjs (2.7.0)
     ffi (1.14.2)
     forwardable-extended (2.6.0)
-    http_parser.rb (0.6.0)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jekyll (4.2.0)
@@ -126,6 +131,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -133,7 +139,9 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 5.0.0.beta1)
+  http_parser.rb!
   jekyll (~> 4.2.0)
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.2.10
