@@ -28,10 +28,12 @@ jobs:
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-1-${{ hashFiles('Gemfile.lock') }}
+      - name: Set deployment flag 
+        run: bundle config set --local deployment 'true' 
       - name: Set Ruby gems directory
         run: bundle config path vendor/bundle
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3 --deployment
+        run: bundle install --jobs 4 --retry 3
       - name: Install node 
         run: npm install 
 
