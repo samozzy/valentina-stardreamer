@@ -39,7 +39,7 @@ jobs:
 
       ### BUILD ###
       - name: Build Jekyll 
-        run: bundle exec rake build 
+        run: bundle exec jekyll build 
 
       ### HTMLTEST ###
       # (This tool makes sure all the links work; may require some tweaking and is optional)
