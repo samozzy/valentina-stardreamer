@@ -1,8 +1,6 @@
-# Jekyll Starter Template
+# Valentina Stardreamer
 
-A basic Jekyll installation with some sensible config flags.
-
-Set up to use Bootstrap and be deployed using GitHub Pages and/or Netlify. GH Pages and Netlify handle the bundle install directories differently so they're included in the `load_paths` sass flag in `_config.yml`.
+Companion website for the show 'Valentina Stardreamer', a co-production between Haste Theatre and Mouth of Lions Theatre.
 
 ## Installation
 
