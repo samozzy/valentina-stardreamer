@@ -1,6 +1,59 @@
 ---
 ---
 
+$valentina-brand: (
+	"red": #D04B43,
+	"navy": #273032,
+	"steel": #344145,
+	"teal": #2E4F56,
+	"green": #4B6F53,
+	"beige": #EBE3B4,
+	"grey": #D9D7CF,
+);
+
+@each $name, $color in $valentina-brand {
+  .text-val-#{$name} {
+    color: $color; 
+    // &:hover, &:focus, &:active {
+    // 	color: lighten($color, 15%);
+    // }
+  }
+  .bg-val-#{$name} {
+    background-color: $color !important;
+  }
+  .border-val-#{$name} {
+    border-color: $color !important;
+  }
+  .btn-val-#{$name} {
+    border-color: $color !important;
+    background-color: $color;
+    &:hover {
+      background-color: darken($color, 10%);
+      border-color: darken($color, 10%);
+    }
+  }
+}
+
+body {
+	background: map-get($valentina-brand, "navy");
+	background: linear-gradient(45deg, map-get($valentina-brand, "navy") 0%, map-get($valentina-brand, "teal") 60%, map-get($valentina-brand, "beige") 100%);
+	background-attachment: fixed;
+
+	@extend .text-light;
+}
+
+.site-title {
+	@media only screen and (min-width: 768px) {
+		letter-spacing: 2px;
+	}
+	@media only screen and (min-width: 1200px) {
+		letter-spacing: 3px;
+	}
+	@media only screen and (min-width: 1400px) {
+		letter-spacing: 8px;
+	}
+}
+
 @import "bootstrap_variables";
 
 
