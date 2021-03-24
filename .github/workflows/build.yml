@@ -55,7 +55,7 @@ jobs:
           path: _site
 
       ### DEPLOY ###
-      Uncomment this for your repository.
+      # Uncomment this for your repository.
       - name: Publish to GH Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
