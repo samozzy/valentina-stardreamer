@@ -51,16 +51,15 @@ jobs:
           key: htmltest-1
       - name: Test built site with htmltest
         uses: wjdp/htmltest-action@v0.13.0-rc1 
-        continue-on-error: true
         with:
           path: _site
 
       ### DEPLOY ###
-      # Uncomment this for your repository.
-      # - name: Publish to GH Pages 🚀
-      #   uses: JamesIves/github-pages-deploy-action@4.0.0
-      #   with:
-      #     branch: gh-pages # The branch the action should deploy to.
-      #     folder: _site # The folder the action should deploy.
+      Uncomment this for your repository.
+      - name: Publish to GH Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: _site # The folder the action should deploy.
 
       ### SUCCESS ### 
