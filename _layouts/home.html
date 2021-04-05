@@ -1,0 +1,75 @@
+---
+layout: default 
+---
+    <div class="container-fluid gradient-background">
+  		<div class="row">
+        <div class="col-md-4 col-3 p-0 mt-auto">
+          <img width="75%" src="{{ site.baseurl }}/static/illustrations/val-left.png" alt="Illustration of Valentina">
+        </div>
+        <div class="col-md-8 col-lg-7 col-9 pt-5">
+          <h1 class="display-2 text-val-white fw-bold site-title">
+            <img width="100px" height="auto" src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic">
+            <br class="d-inline d-lg-none">VALENTINA <br class="d-inline d-lg-none"> STAR DREAMER
+          </h1>
+   				<p class="lead fs-3">{{ site.description }}</p>
+          <div class="w-75 mx-auto">
+            <div class="card bg-val-navy my-4 purple-shadow">
+              <div class="card-body">
+                <h3 class="text-uppercase text-center">Now booking:</strong></h3>
+                <p class="text-center">The Place, Bedford &mdash; Saturday 17th April @ 11am | <a href="https://www.theplacebedford.org.uk/shows/valentina-star-dreamer/">Get Tickets <i class="fa fa-external-link-alt" aria-hidden="true"></i></a></p>
+              </div>
+            </div>
+            <p class="small text-center">Or email us to bring Valentina to your venue or school <br>
+              <a href="mailto:bookings@valentinastardreamer.co.uk" class="text-decoration-none fw-bold">bookings@valentinastardreamer.co.uk</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-val-skyblue py-4">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 text-center">
+          <h2>Before the show</h2>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-8 offset-2 col-md-6 offset-md-3">
+          <a class="btn btn-primary w-100">
+            <i class="fa fa-file-pdf"></i> Download this information as a pdf
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4">
+      <div class="row">
+  			<div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
+          <h2>Find out more...</h2>
+  			</div>
+      </div>
+      {% assign site_pages = site.content | where: "main-menu", "true" | sort: "order" %}
+      <div class="row row-cols-2">
+        {% for p in site_pages %}
+          <div class="col my-3">
+            <div class="card home-card bg-val-purple mx-2 purple-shadow h-100">
+              <a href="{{ p.permalink }}" class="text-decoration-none card-link w-100 h-100">
+                <div class="card-body">
+                  <h3 class="text-center text-val-white">{{ p.title }}</h3>
+                  <div class="d-block text-center">
+                    <img class="mx-auto" width="50%" src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic">
+                  </div>
+                </div>
+              </a> 
+            </div>
+          </div>
+        {% endfor %}
+  		</div>
+    </div>

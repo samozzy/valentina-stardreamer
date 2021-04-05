@@ -1,0 +1,10 @@
+- name: Georgia Murphy
+  role: Director 
+  headshot: /static/img/breakfast.jpeg 
+  bio: Georgia loves directing! 
+- name: Heather Ralph 
+  role: Producer 
+  headshot: /static/img/breakfast.jpeg 
+- name: Sophie Taylor 
+  role: Performer
+  headshot: /static/img/breakfast.jpeg 

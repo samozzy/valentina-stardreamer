@@ -13,26 +13,12 @@
     <title>{{ title | default: site.title }}</title>
   </head>
   <body class="h-100 d-flex flex-column">
-    <div class="container-fluid">
-  		<div class="row mt-4">
-        <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 text-center mb-3">
-          <h1 class="display-2 text-val-beige fw-bold site-title">
-            <i class="fa fa-star fa-fw text-val-red"></i><br class="d-inline d-lg-none">VALENTINA <br class="d-inline d-lg-none"> STARDREAMER
-          </h1>
-        </div>
-  			<div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
-  				<p class="lead fs-3">{{ site.description }}</p>
-          <div class="ratio ratio-16x9 bg-light w-75 mx-auto">
-            <h4 class="text-dark my-auto">Video</h4>
-          </div>
-  			</div>
-  		</div>
-    </div>
+    {{ content }} 
     <div class="container-fluid mt-auto">
       <div class="row bg-val-navy py-2 mt-4 pb-2">
-        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center fw-light">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center fw-light text-val-white">
           <p>Valentina Stardreamer has been made possible thanks to:<br> Haste Theatre, Mouth of Lions Theatre, The Place Bedford, and Arts Council England.</p>
-          <p class="small mb-0 text-val-grey">Web Development by Sam Osborne</p>
+          <p class="small mb-0 text-muted"><a href="https://web.samosborne.me/" class="no-col">Web Development by Sam Osborne</a></p>
         </div>
   	</div>
 

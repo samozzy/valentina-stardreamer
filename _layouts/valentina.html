@@ -1,0 +1,33 @@
+---
+layout: page 
+--- 
+
+<div class="container">
+	<div class="row">
+		<div class="col text-center">
+			<h1>{{ page.title }}</h1>
+		</div>
+	</div>
+	{% if page.content and page.content != empty %}
+		<div class="row">
+			<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				{{ page.content | markdownify }}
+			</div>
+		</div>
+	{% endif %}
+</div>
+
+<hr>
+{% assign events = site.data.valentina | sort: "year" %}
+
+<div class="container-fluid">
+	{% for event in events %}
+		<div class="row mb-4">
+			<div class="col-4 text-end"><h2 class="mb-0">{{ event.year | date_to_long_string }}</h2></div>
+			<div class="col-8">
+				<p class="lead fs-3">{{ event.title }}</p>
+				{{ event.body | markdownify }}
+			</div>
+		</div>
+	{% endfor %}
+</div>

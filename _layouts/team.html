@@ -1,0 +1,16 @@
+---
+layout: page_inner 
+--- 
+
+{{ content | markdownify }} 
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-4">
+	{% for person in site.data.team %}
+		<div class="col text-center">
+			<img class="w-50 rounded-circle" src="{{ person.headshot }}" alt="{{ person.name }} headshot"><br>
+			<h3>{{ person.name }}<br><span class="text-muted">{{ person.role }}</span></h3>
+			{{ person.bio | markdownify }}
+		</div>
+	{% endfor %}
+</div>
+<hr class="w-50 mx-auto">
