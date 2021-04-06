@@ -314,6 +314,28 @@ a.no-col {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .img-rocket {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .img-rocket {
+    height: 100px;
+  }
+}
+
+.img-home-val {
+  width: 75%;
+}
+
+@media only screen and (max-width: 992px) {
+  .img-home-val {
+    width: 50%;
+  }
+}
+
 .timeline-wrapper {
   position: relative;
 }
