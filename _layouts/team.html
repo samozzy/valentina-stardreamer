@@ -75,7 +75,7 @@ layout: page
 						<h3 class="text-center">{{ partner.name }}</h3>
 						<div class="row">
 							<div class="col-4">
-								<img src="{{ partner.logo }}" alt="{{ partner.name }} logo" class="img-fluid">
+								<img src="{{ partner.logo | prepend: site.baseurl }}" alt="{{ partner.name }} logo" class="img-fluid">
 							</div>
 							<div class="col-8">
 								{{ partner.about | markdownify }}
