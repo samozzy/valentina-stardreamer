@@ -9,8 +9,10 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-
-    <title>{{ title | default: site.title }}</title>
+    {% assign title = title | default: page.title | default: site.title %}
+    {% assign lower_title = title | downcase %}
+    {% if lower_title == 'index' %}{% assign title = site.title %}{% endif %}
+    <title>{{ title }} {% unless title == site.title %}| Valentina Star Dreamer{% endunless %}</title>
   </head>
   <body class="h-100 d-flex flex-column">
     {{ content }} 
