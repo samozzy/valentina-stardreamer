@@ -9,7 +9,7 @@
         {% assign site_pages = site.content | where: "main-menu", "true" | sort: "order" %}
         {% for p in site_pages %}
           <li class="nav-item mx-lg-2">
-            <a class="nav-link {% if p.permalink == page.url %}active{% endif %}" href="{{ p.permalink }}">{{ p.title }}</a>
+            <a class="nav-link {% if p.permalink == page.url %}active{% endif %}" href="{{ p.permalink | prepend: site.baseurl }}">{{ p.title }}</a>
           </li>
         {% endfor %}
       </ul>

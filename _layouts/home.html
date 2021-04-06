@@ -60,7 +60,7 @@ layout: default
         {% for p in site_pages %}
           <div class="col my-3">
             <div class="card home-card bg-val-purple mx-2 purple-shadow h-100">
-              <a href="{{ p.permalink }}" class="text-decoration-none card-link w-100 h-100">
+              <a href="{{ p.permalink | prepend: site.baseurl }}" class="text-decoration-none card-link w-100 h-100">
                 <div class="card-body">
                   <h3 class="text-center text-val-white">{{ p.title }}</h3>
                   <div class="d-block text-center">
