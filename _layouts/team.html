@@ -10,7 +10,7 @@ layout: page_inner
 			{% assign headshot_source = person.headshot | slice: 0 %}
 			{% assign headshot_local = false %}
 			{% if headshot_source == '/' %}{% assign headshot_local = true %}{% endif %}
-			<img class="w-50 rounded-circle" src="{% if headshot_local %}{{ site.baseurl %}{% endif %}{{ person.headshot }}" alt="{{ person.name }} headshot"><br>
+			<img class="w-50 rounded-circle" src="{% if headshot_local %}{{ site.baseurl }}{% endif %}{{ person.headshot }}" alt="{{ person.name }} headshot"><br>
 			<h3>{{ person.name }}<br><span class="text-muted">{{ person.role }}</span></h3>
 			{{ person.bio | markdownify }}
 		</div>
