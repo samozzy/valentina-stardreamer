@@ -95,15 +95,6 @@ a.no-col {
 }
 
 .site-title {
-	@media only screen and (min-width: 768px) {
-		letter-spacing: 2px;
-	}
-	@media only screen and (min-width: 1200px) {
-		letter-spacing: 3px;
-	}
-	@media only screen and (min-width: 1400px) {
-		letter-spacing: 8px;
-	}
 	transform: rotate(-5deg) !important;
 	@extend .mb-5;
 	&.display-2 {
