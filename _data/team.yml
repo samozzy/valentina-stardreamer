@@ -1,10 +1,40 @@
-- name: Georgia Murphy
-  role: Director 
-  headshot: /static/img/breakfast.jpeg 
-  bio: Georgia loves directing! 
-- name: Heather Ralph 
-  role: Producer 
-  headshot: /static/img/breakfast.jpeg 
-- name: Sophie Taylor 
-  role: Performer
-  headshot: /static/img/breakfast.jpeg 
+- pictured:
+  - name: El Beaman-Brinklow
+    role: Performer 
+  - name: Georgia Murphy
+    role: Director 
+    website: https://www.georgiamurphy.co.uk/
+  - name: Sam Osborne 
+    role: Broadcast Technician & Web Design
+    website: https://samosborne.me/
+  - name: Caitlin Abbott
+    role: Designer (Set, Costume, Animation, Puppetry)
+    website: https://www.caitlinabbott.co.uk/
+  - name: Sophie Taylor 
+    role: Performer
+  - name: Fizz Margereson
+    role: Sound Designer 
+    website: https://www.fizzmargereson.co.uk/
+  - name: Heather Ralph 
+    role: Producer 
+    website: https://www.heatherralph.co.uk/
+  - name: Jesse Dupré
+    role: Devisor 
+  - name: Valeria Ross 
+    role: Devisor
+- not_pictured:
+  - name: Iain Gibbons Arts 
+    role: Website Illustrations & Poster 
+    website: https://www.iaingibbons.co.uk/artwork
+- partners:
+  - name: Mouths of Lions 
+    logo: /static/img/breakfast.jpeg 
+    website: https://www.mouthsoflions.co.uk/
+    about: |
+     Mouths of Lions are an award winning group of artists dedicated to telling stories that fill us and their audiences with joy. We create through play and tell stories that celebrate big imaginations. Our work is silly, playful, anarchic, curious, surreal, tragic, irreverent and fun. 
+  - name: HASTE Theatre 
+    logo: /static/img/breakfast.jpeg 
+    website: https://hastetheatre.com/
+    about: |
+      Haste Theatre is a multilingual, physical theatre partnership of 4 female identifying artists. With a focus on celebrating the liveness of performance and a physical complicite amongst an ensemble, our work celebrates the ephemerality of theatre and bodies together in a room. We pull together a myriad of styles and influences that best serve the stories we tell in order to create joyful, unique experiences.
+      
