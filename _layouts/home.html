@@ -2,11 +2,16 @@
 layout: default 
 ---
     <div class="container-fluid gradient-background">
+      <div class="row px-0">
+        <nav class="valentina-navbar mx-auto pt-3 px-0">
+          {% include nav.html %}
+        </nav>
+      </div>
   		<div class="row">
         <div class="col-md-4 col-3 p-0 mt-auto">
           <img width="75%" src="{{ site.baseurl }}/static/illustrations/val-left.png" alt="Illustration of Valentina">
         </div>
-        <div class="col-md-8 col-lg-7 col-9 pt-5">
+        <div class="col-md-8 col-lg-7 col-9 pt-3">
           <h1 class="display-2 site-title">
             <img width="100px" height="auto" src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic">
             <br class="d-inline d-lg-none">VALENTINA <br class="d-inline d-lg-none"> STAR DREAMER

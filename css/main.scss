@@ -55,6 +55,9 @@ $primary: map-get($valentina-brand, "beige");
 
 	@extend .text-light;
 }
+.valentina-navbar {
+	@extend .navbar, .navbar-expand-lg, .navbar-dark;
+}
 
 a.no-col {
 	color:inherit;
