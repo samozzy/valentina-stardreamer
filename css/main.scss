@@ -118,6 +118,16 @@ a.no-col {
 	@extend .shadow-sm, .rounded, .p-1;
 }
 
+.content-block p:first-of-type{
+	@extend .lead;
+}
+
+.footer a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 @import "timeline";
 
 @import "bootstrap_variables";
