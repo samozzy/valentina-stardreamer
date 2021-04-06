@@ -262,8 +262,8 @@ a.no-col {
 }
 
 .home-card:hover, .home-card:focus, .home-card:active {
-  box-shadow: -10px 14px rgba(122, 24, 108, 0.4);
-  transform: scale(1.03);
+  box-shadow: -5px 10px 3px rgba(122, 24, 108, 0.6);
+  transform: scale(1.02);
 }
 
 .card .card-link:hover, .card .card-link:focus, .card .card-link:active {
@@ -7843,7 +7843,7 @@ textarea.form-control-lg {
   border-radius: 0.25rem !important;
 }
 
-.rounded-3 {
+.rounded-3, .home-card {
   border-radius: 0.3rem !important;
 }
 
