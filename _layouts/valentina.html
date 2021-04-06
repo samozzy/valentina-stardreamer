@@ -44,10 +44,10 @@ layout: page
 								{% endif %}
 								{% if event.img and event.img != empty %}
 									<div class="col-4">
-										{% assign headshot_source = person.headshot | slice: 0 %}
-										{% assign headshot_local = false %}
-										{% if headshot_source == '/' %}{% assign headshot_local = true %}{% endif %}
-										<img class="img-fluid img-border" src="{% if headshot_local %}{{ site.baseurl }}{% endif %}{{ event.img }}" alt="{{ event.title }}">
+										{% assign image_source = event.img | slice: 0 %}
+										{% assign image_local = false %}
+										{% if image_source == '/' %}{% assign image_local = true %}{% endif %}
+										<img class="img-fluid img-border" src="{% if image_local %}{{ site.baseurl }}{% endif %}{{ event.img }}" alt="{{ event.title }}">
 									</div>
 								{% endif %}
 							</div>
