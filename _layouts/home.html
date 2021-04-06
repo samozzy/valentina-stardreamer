@@ -4,18 +4,21 @@ layout: default
     <div class="container-fluid gradient-background">
       <div class="row px-0">
         <nav class="valentina-navbar mx-auto pt-3 px-0">
-          {% include nav.html %}
+          {% include nav.html hide_title=1 %}
         </nav>
       </div>
   		<div class="row">
-        <div class="col-md-4 col-3 p-0 mt-auto">
+        <div class="order-2 order-md-1 col-4 col-md-2 col-lg-3 p-0 mt-auto">
           <img width="75%" src="{{ site.baseurl }}/static/illustrations/val-left.png" alt="Illustration of Valentina">
         </div>
-        <div class="col-md-8 col-lg-7 col-9 pt-3">
-          <h1 class="display-2 site-title">
-            <img width="100px" height="auto" src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic">
-            <br class="d-inline d-lg-none">VALENTINA <br class="d-inline d-lg-none"> STAR DREAMER
-          </h1>
+        <div class="order-1 order-md-2 col-12 col-md-10 col-lg-9 pt-3">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-2 site-title mx-auto">
+                {% include site-title.html star=2 %}
+              </h1>
+            </div>
+          </div>
    				<p class="lead fs-3">{{ site.description }}</p>
           <div class="w-75 mx-auto">
             <div class="card bg-val-navy my-4 purple-shadow">

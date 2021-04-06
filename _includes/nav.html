@@ -1,13 +1,8 @@
-    <div class="col">
-      <button class="navbar-toggler me-auto ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#valentinaNavbar" aria-controls="valentinaNavbar" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="col order-1 order-lg-2 text-end">
+    <div class="col order-2 order-lg-3 text-end">
       <img src="{{ site.baseurl }}/static/illustrations/rocket-right.png" height="100px" alt="Rocket graphic">
     </div>
-    <div class="col order-2 order-lg-1 collapse navbar-collapse" id="valentinaNavbar">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-pills nav-fill">
+    <div class="col-12 col-lg-6 order-3 order-lg-2 navbar-expand px-4 my-auto {% if include.hide_title %}offset-lg-3{% endif %}" id="valentinaNavbar">
+      <ul class="navbar-nav text-center mb-2 mb-lg-0 nav-pills nav-border nav-fill">
         {% assign site_pages = site.content | where: "main-menu", "true" | sort: "order" %}
         {% for p in site_pages %}
           <li class="nav-item mx-lg-2">

@@ -56,7 +56,11 @@ $primary: map-get($valentina-brand, "beige");
 	@extend .text-light;
 }
 .valentina-navbar {
-	@extend .navbar, .navbar-expand-lg, .navbar-dark;
+	@extend .navbar, .navbar-dark;
+}
+#valentinaNavbar .nav-border {
+	border-bottom: 2px solid map-get($valentina-brand, "purple-shadow");
+	padding-bottom: 0.5rem;
 }
 
 a.no-col {
@@ -85,6 +89,10 @@ a.no-col {
 	background-color: map-get($valentina-brand, "teal") !important;
 	@extend .text-light;
 }
+.navbar-collapse {
+	flex-basis: 60% !important;
+	flex-grow: 0 !important;
+}
 
 .site-title {
 	@media only screen and (min-width: 768px) {
@@ -96,11 +104,20 @@ a.no-col {
 	@media only screen and (min-width: 1400px) {
 		letter-spacing: 8px;
 	}
+	transform: rotate(-5deg) !important;
+	@extend .mb-5;
 	&.display-2 {
 		text-shadow: -5px 7px map-get($valentina-brand, "purple-shadow");
+		img {
+			width: 100px;
+		}
 	}
 	&.navbar-brand {
 		text-shadow: -3px 5px map-get($valentina-brand, "purple-shadow");
+		@extend .w-100, .h-100, .d-block;
+		img {
+			width: 50px;
+		}
 	}
 	@extend .text-val-white, .fw-bold, .text-uppercase;
 }

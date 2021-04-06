@@ -1,6 +1,10 @@
-<nav class="valentina-navbar bg-val-purple mb-4 py-3">
+<nav class="valentina-navbar gradient-background py-3">
   <div class="container-fluid pe-0">
-    <a class="navbar-brand h3 mb-0 site-title" href="{{ site.baseurl }}/">Valentina <br class="d-inline d-lg-none">Star Dreamer</a>
-    {% include nav.html %}
+  	<div class="row w-100 g-0">
+	  	<div class="col-auto order-1">
+			<a class="navbar-brand h3 mb-0 site-title" href="{{ site.baseurl }}/">{% include site-title.html %}</a>
+		</div>
+	    {% include nav.html %}
+	</div>
   </div>
 </nav>
