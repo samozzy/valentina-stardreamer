@@ -20,13 +20,40 @@ layout: page
 <hr>
 {% assign events = site.data.valentina | sort: "year" %}
 
-<div class="container-fluid">
+<div class="container timeline-wrapper">
+	<div class="timeline"></div>
 	{% for event in events %}
-		<div class="row mb-4">
-			<div class="col-4 text-end"><h2 class="mb-0">{{ event.year | date_to_long_string }}</h2></div>
-			<div class="col-8">
-				<p class="lead fs-3">{{ event.title }}</p>
-				{{ event.body | markdownify }}
+		<div class="row mb-5">
+			<div class="col-3 col-md-4 text-end pe-3 pe-md-5">
+				<h2 class="mb-0">{{ event.year | date_to_long_string }}</h2>
+			</div>
+			<div class="col-9 col-md-8 ps-3 ps-md-5" id="timeline-{{ event.title | slugify }}">
+				<div class="card rounded-lg shadow">
+					<div class="card-header bg-val-purple text-light">
+						<p class="lead fs-3 my-auto">
+							<img src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic" width="40px">&nbsp;{{ event.title }}
+						</p>
+					</div>
+					{% if event.body or event.img %}
+						<div class="card-body">
+							<div class="row">
+								{% if event.body and event.body != empty %}
+									<div class="col">
+										{{ event.body | markdownify }}
+									</div>
+								{% endif %}
+								{% if event.img and event.img != empty %}
+									<div class="col-4">
+										{% assign headshot_source = person.headshot | slice: 0 %}
+										{% assign headshot_local = false %}
+										{% if headshot_source == '/' %}{% assign headshot_local = true %}{% endif %}
+										<img class="img-fluid img-border" src="{% if headshot_local %}{{ site.baseurl }}{% endif %}{{ event.img }}" alt="{{ event.title }}">
+									</div>
+								{% endif %}
+							</div>
+						</div>
+					{% endif %}
+				</div>
 			</div>
 		</div>
 	{% endfor %}

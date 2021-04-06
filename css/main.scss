@@ -101,6 +101,13 @@ a.no-col {
 	@extend .text-val-white, .fw-bold, .text-uppercase;
 }
 
+.img-border {
+	border: 3px solid map-get($valentina-brand, "purple");
+	@extend .shadow-sm, .rounded, .p-1;
+}
+
+@import "timeline";
+
 @import "bootstrap_variables";
 
 
