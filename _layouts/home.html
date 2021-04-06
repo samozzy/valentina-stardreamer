@@ -7,31 +7,17 @@ layout: default
           {% include nav.html hide_title=1 %}
         </nav>
       </div>
-  		<div class="row">
-        <div class="order-2 order-md-1 col-6 col-md-2 col-lg-3 p-0 mt-auto mx-auto mx-md-0">
-          <img class="w-75" src="{{ site.baseurl }}/static/illustrations/val-left.png" alt="Illustration of Valentina">
-          <div class="card bg-val-navy mb-4 ms-2">
-            <div class="card-header"><h2>Wait, what?</h2></div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="order-1 order-md-2 col-12 col-md-10 col-lg-9 pt-3">
+  		<div class="row"><!-- Title and Val --> 
+        <div class="col-12 col-lg-9 col-xl-10 order-1 order-lg-2 pt-4 pt-sm-0"><!-- Title section -->
           <div class="row">
-            <div class="col-12">
-              <h1 class="display-2 site-title mx-auto">
+            <div class="col-12"><!-- Title -->
+              <h1 class="display-2 site-title d-flex justify-content-center">
                 {% include site-title.html star=2 %}
               </h1>
-            </div>
+            </div><!-- /Title -->
           </div>
-   				<p class="lead fs-3">{{ site.description }}</p>
-          <div class="w-75 mx-auto">
+          <div class="w-75 mx-auto"><!-- Copy and book --> 
+     				<p class="lead fs-3 text-center">{{ site.description }}</p>
             <div class="card bg-val-navy my-4 purple-shadow">
               <div class="card-body">
                 <h3 class="text-uppercase text-center">Now booking:</strong></h3>
@@ -44,8 +30,22 @@ layout: default
             <div class="content-block">
               {{ content | markdownify }}
             </div>
+          </div><!-- /Copy and book -->
+        </div><!-- /Title section -->
+        <div class="col-10 col-sm-6 col-lg-3 col-xl-2 order-2 order-lg-1 ps-0"><!-- Val -->
+          <img class="img-home-val" src="{{ site.baseurl }}/static/illustrations/val-left.png" alt="Illustration of Valentina">
+          <div class="card bg-val-navy mb-4 ms-2">
+            <div class="card-header"><h2>Wait, what?</h2></div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
-        </div>
+        </div><!-- /Val -->
       </div>
     </div>
     <div class="container-fluid bg-val-skyblue py-4 shadow-lg">

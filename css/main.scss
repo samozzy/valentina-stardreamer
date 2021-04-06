@@ -128,6 +128,21 @@ a.no-col {
 	font-weight: bold;
 }
 
+.img-rocket {
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
+	@media only screen and (min-width: 768px) {
+		height: 100px;
+	}
+}
+.img-home-val {
+	width: 75%;
+	@media only screen and (max-width: 992px) {
+		width: 50%;
+	}
+}
+
 @import "timeline";
 
 @import "bootstrap_variables";

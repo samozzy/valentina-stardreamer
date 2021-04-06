@@ -1,7 +1,10 @@
-    <div class="col order-2 order-lg-3 text-end">
-      <img src="{{ site.baseurl }}/static/illustrations/rocket-right.png" height="100px" alt="Rocket graphic">
-    </div>
-    <div class="col-12 col-lg-6 order-3 order-lg-2 navbar-expand px-4 my-auto {% if include.hide_title %}offset-lg-3{% else %}offset-xl-1{% endif %}" id="valentinaNavbar">
+    <div class="col-12 col-lg-7
+    {% if include.hide_title %}
+      offset-lg-2 offset-xl-3
+    {% else %}
+      offset-xl-1 order-3 order-lg-2
+    {% endif %} col-xl-6 navbar-expand px-md-4 my-auto 
+    " id="valentinaNavbar">
       <ul class="navbar-nav text-center mb-2 mb-lg-0 nav-pills nav-border nav-fill">
         {% assign site_pages = site.content | where: "main-menu", "true" | sort: "order" %}
         {% for p in site_pages %}
@@ -10,4 +13,7 @@
           </li>
         {% endfor %}
       </ul>
+    </div>
+    <div class="col-2 col-lg order-2 order-lg-3 text-end ms-auto">
+      <img src="{{ site.baseurl }}/static/illustrations/rocket-right.png" class="img-rocket" alt="Rocket graphic">
     </div>
