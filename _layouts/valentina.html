@@ -28,8 +28,8 @@ layout: page
 				<h2 class="mb-0">{{ event.year | date_to_long_string }}</h2>
 			</div>
 			<div class="col-9 col-md-8 ps-3 ps-md-5" id="timeline-{{ event.title | slugify }}">
-				<div class="card rounded-lg shadow">
-					<div class="card-header bg-val-purple text-light">
+				<div class="card rounded-3 shadow">
+					<div class="card-header bg-val-purple text-light {% unless event.body or event.img %}rounded-2{% endunless %}">
 						<p class="lead fs-3 my-auto">
 							<img src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic" width="40px">&nbsp;{{ event.title }}
 						</p>
