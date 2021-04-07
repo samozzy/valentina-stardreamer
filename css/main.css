@@ -326,12 +326,12 @@ a.no-col {
   }
 }
 
-.img-home-val {
+.img-home-val, .img-ace {
   width: 75%;
 }
 
 @media only screen and (max-width: 992px) {
-  .img-home-val {
+  .img-home-val, .img-ace {
     width: 50%;
   }
 }
