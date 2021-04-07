@@ -28,13 +28,13 @@
     website: https://www.iaingibbons.co.uk/artwork
 - partners:
   - name: Mouths of Lions 
-    logo: /static/img/breakfast.jpeg 
+    logo: /static/img/logos/mol.png
     website: https://www.mouthsoflions.co.uk/
     about: |
      Mouths of Lions are an award winning group of artists dedicated to telling stories that fill us and their audiences with joy. We create through play and tell stories that celebrate big imaginations. Our work is silly, playful, anarchic, curious, surreal, tragic, irreverent and fun. 
   - name: HASTE Theatre 
-    logo: /static/img/breakfast.jpeg 
+    logo: /static/img/logos/haste.jpg 
     website: https://hastetheatre.com/
     about: |
       Haste Theatre is a multilingual, physical theatre partnership of 4 female identifying artists. With a focus on celebrating the liveness of performance and a physical complicite amongst an ensemble, our work celebrates the ephemerality of theatre and bodies together in a room. We pull together a myriad of styles and influences that best serve the stories we tell in order to create joyful, unique experiences.
-      
+
