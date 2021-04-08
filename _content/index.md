@@ -1,6 +1,6 @@
 ---
 layout: home 
-permalink: / 
+permalink: /home
 ---
 
 Valentina, the first woman in history to go into outer space needs your help to complete her mission!
