@@ -4,6 +4,7 @@ main-menu: "true"
 order: 1
 permalink: /valentina/
 layout: valentina
+image: /static/illustrations/pages/valentina.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

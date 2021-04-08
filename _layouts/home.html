@@ -82,12 +82,12 @@ layout: default
       <div class="row row-cols-2">
         {% for p in site_pages %}
           <div class="col my-3">
-            <div class="card home-card bg-val-purple mx-2 purple-shadow h-100">
+            <div class="card home-card bg-val-purple mx-2 h-100">
               <a href="{{ p.permalink | prepend: site.baseurl }}" class="text-decoration-none card-link w-100 h-100">
                 <div class="card-body">
                   <h3 class="text-center text-val-white">{{ p.title }}</h3>
                   <div class="d-block text-center">
-                    <img class="mx-auto" width="50%" src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic">
+                    <img class="mx-auto" width="50%" src="{{ p.image | default: "/static/illustrations/star.png" | prepend: site.baseurl }}" alt="Star graphic">
                   </div>
                 </div>
               </a> 
