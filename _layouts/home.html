@@ -7,8 +7,8 @@ layout: default
           {% include nav.html hide_title=1 %}
         </nav>
       </div>
-  		<div class="row"><!-- Title and Val --> 
-        <div class="col-12 col-lg-9 col-xl-10 order-1 order-lg-2 pt-4 pt-sm-0"><!-- Title section -->
+  		<div class="row"><!-- Title --> 
+        <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2  order-1 order-lg-2 pt-4 pt-sm-0"><!-- Title section -->
           <div class="row">
             <div class="col-12"><!-- Title -->
               <h1 class="display-2 site-title d-flex justify-content-center">
@@ -25,27 +25,24 @@ layout: default
               </div>
             </div>
             <p class="small text-center">Or email us to bring Valentina to your venue or school <br>
-              <a href="mailto:bookings@valentinastardreamer.co.uk" class="text-decoration-none fw-bold">bookings@valentinastardreamer.co.uk</a></p>
-            <hr>
-            <div class="content-block">
-              {{ content | markdownify }}
-            </div>
+              <a href="mailto:bookings@valentinastardreamer.co.uk" class="text-decoration-none fw-bold">bookings@valentinastardreamer.co.uk</a>
+            </p>
+            <hr class="w-75 mx-auto">
           </div><!-- /Copy and book -->
-        </div><!-- /Title section -->
-        <div class="col-10 col-sm-6 col-lg-3 col-xl-2 order-2 order-lg-1 ps-0"><!-- Val -->
-          <img class="img-home-val" src="{{ site.baseurl }}/static/illustrations/val-left.png" alt="Illustration of Valentina">
-          <div class="card bg-val-navy mb-4 ms-2">
-            <div class="card-header"><h2>Wait, what?</h2></div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+        </div>
+      </div><!-- /Title section -->
+      <div class="row">
+        <div class="col-4 col-lg-3 p-0 my-md-auto"><!-- Val -->
+          <img src="{{ site.baseurl }}/static/illustrations/valentina/floating_alpha.gif" class="img-fluid" alt="Animation of Valentina floating in space">
+        </div>
+        <div class="col-8 col-lg-6">
+          <div class="content-block">
+            {{ content | markdownify }}
           </div>
-        </div><!-- /Val -->
+        </div>
+        <div class="col-6 offset-3 col-lg-3 offset-lg-0 my-lg-auto">
+          {% include wait-what.html fact="diamonds" %}
+        </div>
       </div>
     </div>
     <div class="container-fluid bg-val-skyblue py-4 shadow-lg">
