@@ -1,0 +1,29 @@
+- title: dog
+  words: A stray dog named Laika was launched into Space in 1957
+  picture: /static/illustrations/facts/dog.png
+- title: spaghettification
+  words: Human bodies turn into spaghetti if they land inside a black hole - 'spaghettification'!
+  picture: /static/illustrations/facts/spaghettification.png
+- title: diamonds
+  words: There may be a planet made out of diamonds.
+  picture: /static/illustrations/facts/diamonds.png
+- title: footprints
+  words: If you walk on the moon, your footprints stay for millions of years
+  picture: /static/illustrations/facts/footprints.png
+- title: sunset
+  words: When you are on Mars, the sunset looks like it’s blue.
+  picture: /static/illustrations/facts/sunset.png
+- title: woman
+  words: The first women to set foot on the Moon will be sent by NASA in 2024.
+- title: car-asteroid
+  words: An asteroid about the size of a car enters Earth’s atmosphere roughly once a year – but it burns up before it reaches us. Phew!
+  picture: /static/illustrations/facts/car-asteroid.png
+- title: val
+  words: To this day, Valentina is the youngest woman to ever travel into space.
+  picture: /static/illustrations/facts/val.png
+- title: sky-hat
+  words: "During the launch Valentina recited Mayakovsky: 'The sky! Take off your hat! I’m coming!'"
+  picture: /static/illustrations/facts/sky-hat.png
+- title: seagull
+  words: Valentina’s alias in space was 'Seagull'.
+  picture: /static/illustrations/facts/seagull.png
