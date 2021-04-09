@@ -167,8 +167,11 @@ a.no-col {
 	}
 }
 
+.wait-what-col {
+	@extend .col-10, .offset-1, .col-md-8, .offset-md-2, .col-lg-6, .offset-lg-3;
+}
 .card.wait-what {
-	@extend .bg-val-navy, .mb-4, .ms-2;
+	@extend .bg-val-navy, .mb-4, .ms-2, .text-light;
 }
 
 // 
@@ -183,7 +186,7 @@ a.no-col {
 		height: 100px;
 	}
 }
-.img-home-val, .img-ace {
+.img-home-val, .img-ace, .img-fact {
 	width: 75%;
 	@media only screen and (max-width: 992px) {
 		width: 50%;
