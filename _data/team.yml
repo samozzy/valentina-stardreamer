@@ -1,6 +1,6 @@
 - pictured:
   - name: El Beaman-Brinklow
-    role: Performer 
+    role: Performer & Devisor 
   - name: Georgia Murphy
     role: Director 
     website: https://www.georgiamurphy.co.uk/
@@ -8,10 +8,11 @@
     role: Broadcast Technician & Web Design
     website: https://samosborne.me/
   - name: Caitlin Abbott
-    role: Designer (Set, Costume, Animation, Puppetry)
+    role: Designer 
+    subrole: Set, Costume, Animation, Puppetry
     website: https://www.caitlinabbott.co.uk/
   - name: Sophie Taylor 
-    role: Performer
+    role: Performer & Devisor
   - name: Fizz Margereson
     role: Sound Designer 
     website: https://www.fizzmargereson.co.uk/
@@ -19,13 +20,9 @@
     role: Producer 
     website: https://www.heatherralph.co.uk/
   - name: Jesse Dupré
-    role: Devisor 
+    role: Performer & Devisor 
   - name: Valeria Ross 
-    role: Devisor
-- not_pictured:
-  - name: Iain Gibbons Arts 
-    role: Website Illustrations & Poster 
-    website: https://www.iaingibbons.co.uk/artwork
+    role: Performer & Devisor
 - partners:
   - name: Mouths of Lions 
     logo: /static/img/logos/mol.png
@@ -37,4 +34,17 @@
     website: https://hastetheatre.com/
     about: |
       Haste Theatre is a multilingual, physical theatre partnership of 4 female identifying artists. With a focus on celebrating the liveness of performance and a physical complicite amongst an ensemble, our work celebrates the ephemerality of theatre and bodies together in a room. We pull together a myriad of styles and influences that best serve the stories we tell in order to create joyful, unique experiences.
+  - name: Iain Gibbons Arts 
+    role: Website Illustrations & Poster 
+    website: https://www.iaingibbons.co.uk/artwork
+- special_thanks:
+  - name: Carolyn Fin 
+    role: Astronaut Consultant 
+  - name: Helena Bates 
+    role: Planetary Science researcher, PhD Student in Meteorites, Natural History Museum
+  - name: Maya Domb
+    role: Educational Consultant
+  - name: Alex Levene 
+    role: The Place Bedford 
+  - name: Arts Council England 
 
