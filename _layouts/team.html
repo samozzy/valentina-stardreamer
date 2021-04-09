@@ -52,9 +52,9 @@ layout: page
 					</div>
 					{% endif %}
 					<div class="col">
-						<h3>{{ partner.name }}</h3>
+						<h3 {% unless partner.logo %}class="text-center"{% endunless %}>{{ partner.name }}</h3>
 						{{ partner.about | markdownify }}
-						<p><a href="{{ partner.website }}" class="text-decoration-none text-val-navy">More information <i class="fa fa-external-link-alt"></i></a></p>
+						<p class="text-center"><a href="{{ partner.website }}">More information <i class="fa fa-external-link-alt"></i></a></p>
 					</div>
 				</div>
 			</div>
