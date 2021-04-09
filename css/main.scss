@@ -95,6 +95,14 @@ a.no-col {
 	@extend .lead;
 }
 
+.page-content a {
+	@extend .link-secondary;
+	text-decoration: none;
+	&:hover, &:active, &:focus {
+		text-decoration: underline;
+	}
+}
+
 .footer a {
 	@extend .no-col; 
 	font-weight: bold;
