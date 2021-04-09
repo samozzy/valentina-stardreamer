@@ -126,7 +126,7 @@ a.no-col {
 	@extend .purple-shadow, .rounded-3; 
 }
 
-.home-card, .card .card-link {
+.home-card, .card .card-link, .home-card img {
 	transition: all;
 	transition-duration: 0.2s;
 }
@@ -134,6 +134,20 @@ a.no-col {
 	&:hover, &:focus, &:active {
 		box-shadow: -5px 10px 3px rgba(map-get($valentina-brand, "purple-shadow"),0.6);
 		transform: scale(1.02);
+		img {
+			transform: scale(1.03);
+			box-shadow: -4px 5px 10px rgba(176, 117, 167, 0.7);
+		}
+	}
+	img {
+		border-radius: 50%;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		transform: rotate(-5deg) !important;
+		text-shadow: -3px 5px map-get($valentina-brand, "purple-shadow");
+		@extend .pt-4;
+		margin-bottom: 1rem !important;
 	}
 }
 .card .card-link {
