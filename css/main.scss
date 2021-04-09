@@ -26,6 +26,7 @@ $valentina-brand: (
 );
 
 $primary: map-get($valentina-brand, "beige");
+$secondary: map-get($valentina-brand, "purple");
 
 @each $name, $color in $valentina-brand {
   .text-val-#{$name} {
@@ -95,7 +96,7 @@ a.no-col {
 }
 
 .footer a {
-	@extend a.no-col; 
+	@extend .no-col; 
 	font-weight: bold;
 }
 
