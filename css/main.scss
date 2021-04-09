@@ -5,7 +5,9 @@
 //
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+$font-family-sans-serif: 'Poppins', 'Roboto', 'Open Sans', system-ui, -apple-system, 'Segoe UI', 'Helvetica','Arial',sans-serif;
 $headings-font-family: 'Audiowide','Verdana', sans-serif;
 .heading {
 	font-family: $headings-font-family;
