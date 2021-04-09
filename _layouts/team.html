@@ -11,8 +11,9 @@ layout: page
 	<div class="row mb-4">
 		<div class="col-12 col-lg-6">
 			<img src="{{ site.baseurl }}/static/img/team.png" alt="A Zoom capture of 9 faces, the individual team members of the show" class="img-fluid">
+			<p class="w-75 mx-auto">Valentina Star Dreamer has been made possible thanks to:<br> <a href="https://hastetheatre.com/">Haste Theatre</a>, <a href="https://www.mouthsoflions.co.uk/">Mouths of Lions Theatre</a>, <a href="https://www.theplacebedford.org.uk/">The Place Bedford</a>, and Arts Council England.</p>
 		</div>
-		<div class="col-12 col-lg-6 pt-3 my-auto">
+		<div class="col-12 col-lg-6 p-3 mt-3">
 			<div class="row row-cols-2 row-cols-lg-3">
 				{% for person in site.data.team[0].pictured %}
 					<div class="col mb-2 px-4 px-lg-2">
@@ -21,10 +22,13 @@ layout: page
 							<br>
 							<span class="text-muted">
 								{{ person.role }}
+								{% if person.subrole %}<br>
+									<small class="fs-6">({{ person.subrole }})</small>
+								{% endif %}
 							</span>
 						</h4>
 						{% if person.website %}
-							<a href="{{ person.website }}" class="text-val-navy text-decoration-none">
+							<a href="{{ person.website }}">
 								<small>More information <i class="fa fa-external-link-alt"></i></small>
 							</a>
 						{% endif %}
@@ -32,59 +36,43 @@ layout: page
 				{% endfor %}
 			</div>
 		</div>
-		<div class="col-5 offset-lg-1">
-			<h3>Not Pictured</h3>
-			<div class="row row-cols-1 row-cols-lg-2">
-				{% for person in site.data.team[1].not_pictured %}
-					<div class="col mb-2 px-4 px-lg-2">
-						<h5 class="mb-1">
-							{{ person.name }}
-							<br>
-							<span class="text-muted">
-								{{ person.role }}
-							</span>
-						</h5>
-						{% if person.website %}
-							<a href="{{ person.website }}" class="text-val-navy text-decoration-none">
-								<small>More information <i class="fa fa-external-link-alt"></i></small>
-							</a>
-						{% endif %}
-					</div>
-				{% endfor %}
-			</div>
-		</div>
-		<div class="col-5 offset-1">
-			<div class="card bg-val-navy text-val-white">
-				<div class="card-header"><h3>Wait, what?</h3></div>
-				<div class="card-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-			</div>
-		</div>
-
 	</div>
-	<div class="row mb-4">
-		<div class="col-12">
-			<h2 class="text-center">Our Partners</h2>
-			<div class="row row-cols-2">
-				{% for partner in site.data.team[2].partners %}
-					<div class="col">
-						<div class="row">
-							<div class="col-3">
-								<img src="{{ partner.logo | prepend: site.baseurl }}" alt="{{ partner.name }} logo" class="img-fluid">
-							</div>
-							<div class="col-9">
-								<h3>{{ partner.name }}</h3>
-								{{ partner.about | markdownify }}
-								<p><a href="{{ partner.website }}" class="text-decoration-none text-val-navy">More information <i class="fa fa-external-link-alt"></i></a></p>
-							</div>
-						</div>
+	<div class="row my-2">
+		<div class="wait-what-col">
+			{% include wait-what.html fact="spaghettification" %}
+		</div>
+	</div>
+	<div class="row row-cols-2 row-cols-lg-3 px-4">
+		{% for partner in site.data.team[1].partners %}
+			<div class="col">
+				<div class="row">
+					{% if partner.logo %}
+					<div class="col-8 offset-2 col-md-4 offset-md-0 mb-2">
+						<img src="{{ partner.logo | prepend: site.baseurl }}" alt="{{ partner.name }} logo" class="w-75">
 					</div>
-				{% endfor %}
+					{% endif %}
+					<div class="col">
+						<h3>{{ partner.name }}</h3>
+						{{ partner.about | markdownify }}
+						<p><a href="{{ partner.website }}" class="text-decoration-none text-val-navy">More information <i class="fa fa-external-link-alt"></i></a></p>
+					</div>
+				</div>
 			</div>
+		{% endfor %}
+	</div>
+	<div class="row my-4">
+		<div class="col-12 text-center"><h3>Special Thanks</h3></div>
+	</div>
+	<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 px-4">
+		{% for partner in site.data.team[2].special_thanks %}
+			<div class="col">
+				<h5>{{ partner.name }}{% if partner.role %}<br><span class="text-muted fs-6">{{ partner.role }}</span>{% endif %}</h5>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="row mt-4">
+		<div class="wait-what-col">
+			{% include wait-what.html fact="sunset" %}
 		</div>
 	</div>
 </div>
