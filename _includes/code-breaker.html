@@ -2,7 +2,7 @@
 	<div class="col-12">
 		<div class="card mb-4">
 			<div class="card-header">
-				<h3>Can you help Valentina's Russian spelling?</h3>
+				<h2>Can you help Valentina's Russian spelling?</h2>
 			</div>
 			<div class="card-body">
 				<div class="container-fluid fade show" id="codebreaker-wrapper">
@@ -19,7 +19,7 @@
 							  	{% for question in site.data.codebreaker %}
 									<div class="carousel-item {% if forloop.first %}active{% endif %}" id="question-{{ question.english | slugify }}">
 										<div class="w-100 d-block">
-											<p>Question {{ forloop.index }} / {{ site.data.codebreaker | size }}</p>
+											<p>{{ forloop.index }} / {{ site.data.codebreaker | size }}</p>
 											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">{{ question.english }}</span><br>
 												<strong>Russian (phonetic):</strong>&nbsp;{{ question.russian }}
 											</p>
