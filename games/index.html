@@ -9,7 +9,7 @@
       type="image/png" 
       href="/static/favicon.png">
 
-    <link rel="stylesheet" href="/css/main.css?cachebust=202104090413">
+    <link rel="stylesheet" href="/css/main.css?cachebust=202104141057">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -79,17 +79,559 @@
 
   <p>Attention all space cadets! Can you complete these secret missions?</p>
 
-  <div class="w-100">
-	<em>Game coming soon</em>
-</div>
+  <div class="row">
+	<div class="col-12">
+		<div class="card mb-4">
+			<div class="card-header">
+				<h3>Can you help Valentina's Russian spelling?</h3>
+			</div>
+			<div class="card-body">
+				<div class="container-fluid fade show" id="codebreaker-wrapper">
+					<div class="row">
+						<div class="col-12">
+							<p class="lead">Use the Russian keyboard to translate from phonetic Russian to Cyrillic</p>
+							<p class="small">Some English letter combinations are represented using just 1 Cyrillic character!</p>
+						</div>
+					</div>
+					<div class="row g-0">
+						<div class="col-12 col-lg-8 order-1 order-lg-2">
+							<div id="carouselCodebreaker" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+							  <div class="carousel-inner mx-auto">
+							  	
+									<div class="carousel-item active" id="question-space">
+										<div class="w-100 d-block">
+											<p>Question 1 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Space</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Kosmos
+											</p>
+											<span class="d-none answer">космос</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-astronaut">
+										<div class="w-100 d-block">
+											<p>Question 2 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Astronaut</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Kosmonavt
+											</p>
+											<span class="d-none answer">космонавт</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-valentina">
+										<div class="w-100 d-block">
+											<p>Question 3 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Valentina</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Valentina
+											</p>
+											<span class="d-none answer">валентина</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-star">
+										<div class="w-100 d-block">
+											<p>Question 4 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Star</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Zvezda
+											</p>
+											<span class="d-none answer">звезда</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-planet">
+										<div class="w-100 d-block">
+											<p>Question 5 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Planet</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Planeta
+											</p>
+											<span class="d-none answer">планета</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-rocket">
+										<div class="w-100 d-block">
+											<p>Question 6 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Rocket</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Raketa
+											</p>
+											<span class="d-none answer">ракета</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-launch">
+										<div class="w-100 d-block">
+											<p>Question 7 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Launch</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Spusk
+											</p>
+											<span class="d-none answer">спуск</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-russia">
+										<div class="w-100 d-block">
+											<p>Question 8 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Russia</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Rossiya
+											</p>
+											<span class="d-none answer">россия</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-training">
+										<div class="w-100 d-block">
+											<p>Question 9 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Training</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Trenirovka
+											</p>
+											<span class="d-none answer">тренировка</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-mum">
+										<div class="w-100 d-block">
+											<p>Question 10 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Mum</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Mama
+											</p>
+											<span class="d-none answer">мама</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-moon">
+										<div class="w-100 d-block">
+											<p>Question 11 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Moon</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Luna
+											</p>
+											<span class="d-none answer">луна</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-earth">
+										<div class="w-100 d-block">
+											<p>Question 12 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Earth</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Zemlya
+											</p>
+											<span class="d-none answer">земля</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-atmosphere">
+										<div class="w-100 d-block">
+											<p>Question 13 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Atmosphere</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Atmosfera
+											</p>
+											<span class="d-none answer">атмосфера</span>
+										</div>
+									</div>
+								
+									<div class="carousel-item " id="question-mars">
+										<div class="w-100 d-block">
+											<p>Question 14 / 14</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Mars</span><br />
+												<strong>Russian (phonetic):</strong>&nbsp;Mars
+											</p>
+											<span class="d-none answer">марс</span>
+										</div>
+									</div>
+								
+							  </div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-2 px-4 mt-2 mt-lg-0 order-2 order-lg-1">
+							<button class="btn btn-secondary w-100 h-100 rounded-0 mx-auto" type="button" data-bs-target="#carouselCodebreaker" data-bs-slide="prev" onclick="cleartext()">
+								<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;
+								<span>Previous</span>
+							</button>
+						</div>
+						<div class="col-6 col-lg-2 px-4 mt-2 mt-lg-0 order-3 order-lg-3">
+							<button class="btn btn-secondary w-100 h-100 rounded-0 mx-auto" type="button" data-bs-target="#carouselCodebreaker" data-bs-slide="next" onclick="cleartext()">
+								<span>Next</span>
+								<i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;
+							</button>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="keyboard">
+				
+	<ul id="tTabCell">
+		<li>
+			<span onclick="addchar('А',event);" class="tC2">A</span>
+			<br />
+			<span onclick="addchar('а',event);">a</span><br />
+			<input type="button" id="charbutton0" class="tB bcharset" onclick="addchar(this.value,event);" value="а" />
+		</li>
+		<li>
+			<span onclick="addchar('Б',event);" class="tC2">B</span>
+			<br />
+			<span onclick="addchar('б',event);">b</span><br />
+			<input type="button" id="charbutton1" class="tB bcharset" onclick="addchar(this.value,event);" value="б" />
+		</li>
+		<li>
+			<span onclick="addchar('В',event);" class="tC2">V</span>
+			<br />
+			<span onclick="addchar('в',event);">v</span><br />
+			<input type="button" id="charbutton2" class="tB bcharset" onclick="addchar(this.value,event);" value="в" />
+		</li>
+		<li>
+			<span onclick="addchar('Г',event);" class="tC2">G</span>
+			<br />
+			<span onclick="addchar('г',event);">g</span><br />
+			<input type="button" id="charbutton3" class="tB bcharset" onclick="addchar(this.value,event);" value="г" />
+		</li>
+		<li>
+			<span onclick="addchar('Д',event);" class="tC2">D</span>
+			<br />
+			<span onclick="addchar('д',event);">d</span><br />
+			<input type="button" id="charbutton4" class="tB bcharset" onclick="addchar(this.value,event);" value="д" />
+		</li>
+		<li>
+			<span onclick="addchar('Е',event);" class="tC2">E</span>
+			<br />
+			<span onclick="addchar('е',event);">e</span><br />
+			<input type="button" id="charbutton5" class="tB bcharset" onclick="addchar(this.value,event);" value="е" />
+		</li>
+		<li>
+			<span onclick="addchar('Ё',event);" class="tC2">Jo</span>
+			<br />
+			<span onclick="addchar('ё',event);">jo,yo,ö</span>
+			<br /><input type="button" id="charbutton6" class="tB bcharset2" onclick="addchar(this.value,event);" value="ё" />
+		</li>
+		<li>
+			<span onclick="addchar('Ж',event);" class="tC2">Zh</span>
+			<br />
+			<span onclick="addchar('ж',event);">zh</span><br />
+			<input type="button" id="charbutton7" class="tB bcharset2" onclick="addchar(this.value,event);" value="ж" />
+		</li>
+		<li>
+			<span onclick="addchar('З',event);" class="tC2">Z</span>
+			<br />
+			<span onclick="addchar('з',event);">z</span><br />
+			<input type="button" id="charbutton8" class="tB bcharset" onclick="addchar(this.value,event);" value="з" />
+		</li>
+		<li>
+			<span onclick="addchar('И',event);" class="tC2">I</span>
+			<br />
+			<span onclick="addchar('и',event);">i</span><br />
+			<input type="button" id="charbutton9" class="tB bcharset" onclick="addchar(this.value,event);" value="и" />
+		</li>
+		<li>
+			<span onclick="addchar('Й',event);" class="tC2">J</span>
+			<br />
+			<span onclick="addchar('й',event);">j</span><br />
+			<input type="button" id="charbutton10" class="tB bcharset" onclick="addchar(this.value,event);" value="й" />
+		</li>
+		<li>
+			<span onclick="addchar('К',event);" class="tC2">K</span>
+			<br />
+			<span onclick="addchar('к',event);">k</span><br />
+			<input type="button" id="charbutton11" class="tB bcharset" onclick="addchar(this.value,event);" value="к" />
+		</li>
+		<li>
+			<span onclick="addchar('Л',event);" class="tC2">L</span>
+			<br />
+			<span onclick="addchar('л',event);">l</span><br />
+			<input type="button" id="charbutton12" class="tB bcharset" onclick="addchar(this.value,event);" value="л" />
+		</li>
+		<li>
+			<span onclick="addchar('М',event);" class="tC2">M</span>
+			<br />
+			<span onclick="addchar('м',event);">m</span><br />
+			<input type="button" id="charbutton13" class="tB bcharset" onclick="addchar(this.value,event);" value="м" />
+		</li>
+		<li>
+			<span onclick="addchar('Н',event);" class="tC2">N</span>
+			<br />
+			<span onclick="addchar('н',event);">n</span><br />
+			<input type="button" id="charbutton14" class="tB bcharset" onclick="addchar(this.value,event);" value="н" />
+		</li>
+		<li>
+			<span onclick="addchar('О',event);" class="tC2">O</span>
+			<br />
+			<span onclick="addchar('о',event);">o</span><br />
+			<input type="button" id="charbutton15" class="tB bcharset" onclick="addchar(this.value,event);" value="о" />
+		</li>
+		<li>
+			<span onclick="addchar('П',event);" class="tC2">P</span>
+			<br />
+			<span onclick="addchar('п',event);">p</span><br />
+			<input type="button" id="charbutton16" class="tB bcharset" onclick="addchar(this.value,event);" value="п" />
+		</li>
+		<li>
+			<span onclick="addchar('Р',event);" class="tC2">R</span>
+			<br />
+			<span onclick="addchar('р',event);">r</span><br />
+			<input type="button" id="charbutton17" class="tB bcharset" onclick="addchar(this.value,event);" value="р" />
+		</li>
+		<li>
+			<span onclick="addchar('С',event);" class="tC2">S</span>
+			<br />
+			<span onclick="addchar('с',event);">s</span><br />
+			<input type="button" id="charbutton18" class="tB bcharset" onclick="addchar(this.value,event);" value="с" />
+		</li>
+		<li>
+			<span onclick="addchar('Т',event);" class="tC2">T</span>
+			<br />
+			<span onclick="addchar('т',event);">t</span><br />
+			<input type="button" id="charbutton19" class="tB bcharset" onclick="addchar(this.value,event);" value="т" />
+		</li>
+		<li>
+			<span onclick="addchar('У',event);" class="tC2">U</span>
+			<br />
+			<span onclick="addchar('у',event);">u</span><br />
+			<input type="button" id="charbutton20" class="tB bcharset" onclick="addchar(this.value,event);" value="у" />
+		</li>
+		<li>
+			<span onclick="addchar('Ф',event);" class="tC2">F</span>
+			<br />
+			<span onclick="addchar('ф',event);">f</span><br />
+			<input type="button" id="charbutton21" class="tB bcharset" onclick="addchar(this.value,event);" value="ф" />
+		</li>
+		<li>
+			<span onclick="addchar('Х',event);" class="tC2">H</span>
+			<br />
+			<span onclick="addchar('х',event);">h,x</span>
+			<br />
+			<input type="button" id="charbutton22" class="tB bcharset2" onclick="addchar(this.value,event);" value="х" />
+		</li>
+		<li>
+			<span onclick="addchar('Ц',event);" class="tC2">C</span>
+			<br />
+			<span onclick="addchar('ц',event);">c</span><br />
+			<input type="button" id="charbutton23" class="tB bcharset" onclick="addchar(this.value,event);" value="ц" />
+		</li>
+		<li>
+			<span onclick="addchar('Ч',event);" class="tC2">Ch</span>
+			<br />
+			<span onclick="addchar('ч',event);">ch</span><br />
+			<input type="button" id="charbutton24" class="tB bcharset2" onclick="addchar(this.value,event);" value="ч" />
+		</li>
+		<li>
+			<span onclick="addchar('Ш',event);" class="tC2">Sh</span>
+			<br />
+			<span onclick="addchar('ш',event);">sh</span><br />
+			<input type="button" id="charbutton25" class="tB bcharset2" onclick="addchar(this.value,event);" value="ш" />
+		</li>
+		<li>
+			<span onclick="addchar('Щ',event);" class="tC2">Shh</span>
+			<br />
+			<span onclick="addchar('щ',event);">shh,w</span><br /><input type="button" id="charbutton26" class="tB bcharset2" onclick="addchar(this.value,event);" value="щ" />
+		</li>
+<!-- 		<li>
+			<span onclick="addchar('Ъ',event);" class="tC2">##</span><
+			br><
+			span onclick="addchar('ъ',event);">#,/,tvz</span>
+			<br><input type="button" id="charbutton27" class="tB bcharset2" onclick="addchar(this.value,event);" value="ъ">
+		</li> -->
+		<li>
+			<span onclick="addchar('Ы',event);" class="tC2">Y</span>
+			<br />
+			<span onclick="addchar('ы',event);">y</span><br />
+			<input type="button" id="charbutton28" class="tB bcharset" onclick="addchar(this.value,event);" value="ы" />
+		</li>
+<!-- 		<li>
+			<span onclick="addchar('Ь',event);" class="tC2">''</span>
+			<br>
+			<span onclick="addchar('ь',event);">',mjz</span>
+			<br>
+			<input type="button" id="charbutton29" class="tB bcharset2" onclick="addchar(this.value,event);" value="ь">
+		</li>
+		<li>
+			<span onclick="addchar('Э',event);" class="tC2">Je</span>
+			<br>
+			<span onclick="addchar('э',event);">je,ä</span>
+			<br>
+			<input type="button" id="charbutton30" class="tB bcharset2" onclick="addchar(this.value,event);" value="э">
+		</li>
+		<li>
+			<span onclick="addchar('Ю',event);" class="tC2">Ju</span>
+			<br>
+			<span onclick="addchar('ю',event);">ju,yu,ü</span>
+			<br><input type="button" id="charbutton31" class="tB bcharset2" onclick="addchar(this.value,event);" value="ю">
+		</li>-->
+		<li>
+			<span onclick="addchar('Я',event);" class="tC2">Ja</span>
+			<br />
+			<span onclick="addchar('я',event);">ja,ya,q</span>
+			<br /><input type="button" id="charbutton32" class="tB bcharset2" onclick="addchar(this.value,event);" value="я" />
+		</li>
+	</ul>
+
+	<script language="JavaScript" type="text/javascript">
+	var shift = 0;
+	var chartabledirection = 0;
+	var chartable = new Array
+		(new Array("а","б","в","г","д","е","ё","ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф","х","ц","ч","ш","щ","ъ","ы","ь","э","ю","я"),
+			new Array("А","Б","В","Г","Д","Е","Ё","Ж","З","И","Й","К","Л","М","Н","О","П","Р","С","Т","У","Ф","Х","Ц","Ч","Ш","Щ","Ъ","Ы","Ь","Э","Ю","Я"),
+			new Array("a","b","v","g","d","e","jo","zh","z","i","j","k","l","m","n","o","p","r","s","t","u","f","h","c","ch","sh","shh","#","y","\'","je","ju","ja"),
+			new Array("A","B","V","G","D","E","Jo","Zh","Z","I","J","K","L","M","N","O","P","R","S","T","U","F","H","C","Ch","Sh","Shh","##","Y","\'\'","Je","Ju","Ja"));
+	function showtable(shift,chartabledirection)
+	{
+		row = 2*(chartabledirection?1:0) + (shift?1:0);
+		for (var i=0;i<chartable[row].length;i++)  
+		{
+			if ($("#charbutton"+i).length) {
+				if (chartable[row][i].length>0) 
+				{
+					$("#charbutton"+i).val(chartable[row][i]);
+				}
+				else
+				{
+					$("#charbutton"+i).val(" ");
+				}
+			}
+		}
+		setfoc();
+	}
+
+	function clearresult() {
+		document.getElementById('result').innerHTML = ''; 
+	}
+	function addchar(result, evnt)
+	{
+		$('#textentry').append(result);
+		clearresult();
+		return false;
+	}
+	function cleartext() {
+		document.getElementById('textentry').innerHTML = '';
+		clearresult();
+		return;
+	}
+	function backspace() {
+		newtext = document.getElementById('textentry').textContent.slice(0, -1);
+		document.getElementById('textentry').textContent = newtext;
+		clearresult();
+		return 
+	}
+	</script>
 
 </div>
 
-<h2 id="help-valentina-parachute-from-space-will-she-land-back-home-or-in-another-country">Help Valentina parachute from space. Will she land back home or in another country?</h2>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="border-secondary w-100">
+							  <p>Your answer: <span id="textentry"></span></p>
+							  <span id="result" class="pb-2 d-block"></span>
+							  <div class="row mb-2">
+							  	<div class="col-12 col-lg-6 text-center mx-auto">
+							  		<button class="btn btn-sm btn-success px-4 w-100" onclick="submit()">Check answer</button>
+							  	</div>
+							  </div>
+							  <div class="row">
+							  	<div class="col-6 col-lg-3 offset-lg-3 text-center text-lg-end">
+								    <button class="btn btn-sm btn-secondary px-4 w-100" onclick="cleartext()">Clear all</button>
+								</div>
+								<div class="col-6 col-lg-3 text-center text-lg-start">
+								    <button class="btn btn-sm btn-secondary px-4 w-100" onclick="backspace()">Clear one</button>
+								</div>
+							  </div>
+							  <p class="mt-2 mb-0 fs-5">Score: <span id="scoreCounter">0</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none fade" id="success-panel">
+					<h3 class="text-center">You did it!</h3>
+					<p>Great work, space cadet. You helped Valentina with her translations!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<p><em>Maze</em></p>
+  <script>
+	function updateScoreCounter(num) {
+		$('#scoreCounter')[0].innerText = num;
+		return; 
+	}
 
-<div class="wait-what-col">
+	$('document').ready(function(){
+		scoreArray = {
+			
+			"question-space": 0,
+			
+			"question-astronaut": 0,
+			
+			"question-valentina": 0,
+			
+			"question-star": 0,
+			
+			"question-planet": 0,
+			
+			"question-rocket": 0,
+			
+			"question-launch": 0,
+			
+			"question-russia": 0,
+			
+			"question-training": 0,
+			
+			"question-mum": 0,
+			
+			"question-moon": 0,
+			
+			"question-earth": 0,
+			
+			"question-atmosphere": 0,
+			
+			"question-mars": 0,
+			
+		}
+		scoreArrayLength = 14
+		updateScoreCounter(0);
+	});
+
+	function totalScore() {
+		var score = 0;
+		for (item in scoreArray) {
+			score = score + scoreArray[item]
+		}
+		console.log('Score: ' + score)
+		return score 
+	}
+   
+/*
+- on document launch, set up an array with the id of each element and 0
+- on correct answer, put a 1 in the correct place and remove the question from the DOM
+- use the counter to judge the total
+- when the total hits the length of the array, show the 'congrats' pane
+
+*/
+	function submit() {
+		correctAnswer = $('#carouselCodebreaker .active .answer')[0].outerText 
+		submittedAnswer = $('#textentry')[0].innerText 
+
+		if (correctAnswer == submittedAnswer) {
+			document.getElementById('result').innerHTML = 'Correct!';
+			question = $("#carouselCodebreaker .active .question")[0].outerText.toLowerCase();
+			scoreArray["question-"+question] = 1;
+			score = totalScore() 
+			updateScoreCounter(score);
+			if (score == scoreArrayLength) {
+				$('#codebreaker-wrapper').addClass('d-none').removeClass('show');
+				$('#success-panel').removeClass('d-none').addClass('d-block show');
+			}
+		}
+		else {
+			document.getElementById('result').innerHTML = 'Not quite! Keep trying';
+		}
+		return; 
+	}
+</script>
+
+  <h2 id="help-valentina-parachute-from-space-will-she-land-back-home-or-in-another-country">Help Valentina parachute from space. Will she land back home or in another country?</h2>
+
+  <p><em>Maze</em></p>
+
+  <div class="wait-what-col">
   
 
 	<div class="card wait-what">
@@ -110,13 +652,13 @@
 
 </div>
 
-<h2 id="test-your-space-knowledge-in-this-crossword">Test your space knowledge in this crossword</h2>
+  <h2 id="test-your-space-knowledge-in-this-crossword">Test your space knowledge in this crossword</h2>
 
-<div class="ratio ratio-1x1 w-50 mx-auto my-3">
+  <div class="ratio ratio-1x1 w-50 mx-auto my-3">
   <iframe height="100%" width="auto" frameborder="0" src="https://crosswordlabs.com/embed/space-travel-11"></iframe>
 </div>
 
-<div class="wait-what-col">
+  <div class="wait-what-col">
   
 
 	<div class="card wait-what">
@@ -137,11 +679,11 @@
 
 </div>
 
-<h2 id="create-your-own-space-image">Create your own space image</h2>
+  <h2 id="create-your-own-space-image">Create your own space image</h2>
 
-<p><em>Image to be added</em></p>
+  <p><em>Image to be added</em></p>
 
-<div class="wait-what-col">
+  <div class="wait-what-col">
   
 
 	<div class="card wait-what">
@@ -162,6 +704,7 @@
 
 </div>
 
+</div>
 
 
 </div>
