@@ -56,7 +56,7 @@
   background-color: #7469A0 !important;
 }
 
-.border-val-purple {
+.border-val-purple, .img-games img {
   border-color: #7469A0 !important;
 }
 
@@ -339,6 +339,12 @@ a.no-col, .footer a {
 
 .card .card-link:hover, .card .card-link:focus, .card .card-link:active {
   background-color: #63598c;
+}
+
+.img-games img {
+  width: 50%;
+  border-width: 2px;
+  border-style: solid;
 }
 
 @media only screen and (max-width: 768px) {
@@ -6835,7 +6841,7 @@ textarea.form-control-lg {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.shadow-sm, .img-border {
+.shadow-sm, .img-border, .img-games img {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
