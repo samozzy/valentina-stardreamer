@@ -10,18 +10,15 @@ image: /static/illustrations/pages/games.png
 
 Attention all space cadets! Can you complete these secret missions? 
 
-
 {% include code-breaker.html %}
-
-## Help Valentina parachute from space. Will she land back home or in another country?
-
-_Maze_
 
 <div class="wait-what-col">
   {% include wait-what.html fact="car-asteroid" %}
 </div>
 
 ## Test your space knowledge in this crossword 
+
+[<i class="fa fa-file-pdf" aria-hidden="true"></i> You can also download it to print and play at home]({{site.baseurl}}/static/games/crossword.pdf)
 
 <div class="ratio ratio-1x1 w-50 mx-auto my-3">
   <iframe height="100%" width="auto" frameborder="0" src="https://crosswordlabs.com/embed/space-travel-11"></iframe>
@@ -31,9 +28,35 @@ _Maze_
   {% include wait-what.html fact="val" %}
 </div>
 
-## Create your own space image
+# Download these to play at home! 
 
-_Image to be added_
+You can either print them out and use pens and pencils, or fill them in digitally using your mouse or touch screen.
+
+<div class="row img-games mb-4">
+  <div class="col-12 col-md-6">
+    <div class="card h-100 border-0">
+      <div class="card-header bg-transparent border-0 d-flex align-items-center justify-content-center h-100">
+        <h3>Help Valentina parachute from space. Will she land back home or in another country?</h3>
+      </div>
+      <div class="card-body d-flex align-items-end justify-content-center">
+        <a href="{{ site.baseurl }}/static/games/maze.png"><img alt="Maze image" src="{{site.baseurl}}/static/games/maze.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="card h-100 border-0">
+      <div class="card-header bg-transparent border-0 d-flex align-items-center justify-content-center h-100">
+        <h3>Create your own space image</h3>
+      </div>
+      <div class="card-body d-flex align-items-end justify-content-center">
+        <a href="{{ site.baseurl }}/static/games/valentina.jpeg"><img alt="Valentina colouring in image" src="{{site.baseurl}}/static/games/valentina.jpeg"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+You can share your completed space pictures with us by emailing them to <space@valentinastardreamer.co.uk> or on social media with #ValentinaInSpace
+
 
 <div class="wait-what-col">
   {% include wait-what.html fact="seagull" %}

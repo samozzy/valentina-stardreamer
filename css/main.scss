@@ -178,6 +178,14 @@ a.no-col {
 // IMAGES 
 // 
 
+.img-games {
+	img {
+		width: 50%;
+		border-width: 2px;
+		border-style: solid;
+		@extend .shadow-sm, .border-val-purple;
+	}
+}
 .img-rocket {
 	@media only screen and (max-width: 768px) {
 		width: 100%;
