@@ -10,9 +10,8 @@ image: /static/illustrations/pages/games.png
 
 Attention all space cadets! Can you complete these secret missions? 
 
-{% include code-breaker.html %}
 
-</div>
+{% include code-breaker.html %}
 
 ## Help Valentina parachute from space. Will she land back home or in another country?
 

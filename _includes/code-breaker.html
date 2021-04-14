@@ -5,70 +5,131 @@
 				<h3>Can you help Valentina's Russian spelling?</h3>
 			</div>
 			<div class="card-body">
-				<div class="container-fluid">
+				<div class="container-fluid fade show" id="codebreaker-wrapper">
 					<div class="row">
 						<div class="col-12">
-							<p class="lead">What word is missing from the sentence?</p>
+							<p class="lead">Use the Russian keyboard to translate from phonetic Russian to Cyrillic</p>
+							<p class="small">Some English letter combinations are represented using just 1 Cyrillic character!</p>
 						</div>
 					</div>
 					<div class="row g-0">
 						<div class="col-12 col-lg-8 order-1 order-lg-2">
-							<div id="carouselExampleControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+							<div id="carouselCodebreaker" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
 							  <div class="carousel-inner mx-auto">
-								<div class="carousel-item active">
-									<div class="w-100 d-block">
-										<p>Question 1</p>
-										<div class="btn-group-vertical w-100" role="group" aria-label="Basic radio toggle button group">
-										  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio1">Radio 1</label>
-
-										  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio2">Radio 2</label>
-
-										  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio3">Radio 3</label>
-
-										  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio3">Radio 4</label>
+							  	{% for question in site.data.codebreaker %}
+									<div class="carousel-item {% if forloop.first %}active{% endif %}" id="question-{{ question.english | slugify }}">
+										<div class="w-100 d-block">
+											<p>Question {{ forloop.index }} / {{ site.data.codebreaker | size }}</p>
+											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">{{ question.english }}</span><br>
+												<strong>Russian (phonetic):</strong>&nbsp;{{ question.russian }}
+											</p>
+											<span class="d-none answer">{{ question.answer | downcase }}</span>
 										</div>
 									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="w-100 d-block">
-										<p>Question 2</p>
-										<div class="btn-group-vertical w-100" role="group" aria-label="Basic radio toggle button group">
-										  <input type="radio" class="btn-check" name="btnradio2_1" id="btnradio2_1" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio2_1">Radio 1</label>
-
-										  <input type="radio" class="btn-check" name="btnradio2_2" id="btnradio2_2" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio2_2">Radio 2</label>
-
-										  <input type="radio" class="btn-check" name="btnradio2_3" id="btnradio2_3" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio2_3">Radio 3</label>
-
-										  <input type="radio" class="btn-check" name="btnradio2_4" id="btnradio2_4" autocomplete="off">
-										  <label class="btn btn-outline-secondary" for="btnradio2_4">Radio 4</label>
-										</div>
-									</div>
-								</div>
+								{% endfor %}
 							  </div>
 							</div>
 						</div>
 						<div class="col-6 col-lg-2 px-4 mt-2 mt-lg-0 order-2 order-lg-1">
-							<button class="btn btn-secondary w-100 h-100 rounded-0 mx-auto" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+							<button class="btn btn-secondary w-100 h-100 rounded-0 mx-auto" type="button" data-bs-target="#carouselCodebreaker" data-bs-slide="prev" onclick="cleartext()">
 								<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;
 								<span>Previous</span>
 							</button>
 						</div>
 						<div class="col-6 col-lg-2 px-4 mt-2 mt-lg-0 order-3 order-lg-3">
-							<button class="btn btn-secondary w-100 h-100 rounded-0 mx-auto" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+							<button class="btn btn-secondary w-100 h-100 rounded-0 mx-auto" type="button" data-bs-target="#carouselCodebreaker" data-bs-slide="next" onclick="cleartext()">
 								<span>Next</span>
 								<i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;
 							</button>
 						</div>
 					</div>
+					<div class="row mt-4">
+						<div class="col-12">
+							{% include keyboard.html %}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="border-secondary w-100">
+							  <p>Your answer: <span id="textentry"></span></p>
+							  <span id="result" class="pb-2 d-block"></span>
+							  <div class="row mb-2">
+							  	<div class="col-12 col-lg-6 text-center mx-auto">
+							  		<button class="btn btn-sm btn-success px-4 w-100" onclick="submit()">Check answer</button>
+							  	</div>
+							  </div>
+							  <div class="row">
+							  	<div class="col-6 col-lg-3 offset-lg-3 text-center text-lg-end">
+								    <button class="btn btn-sm btn-secondary px-4 w-100" onclick="cleartext()">Clear all</button>
+								</div>
+								<div class="col-6 col-lg-3 text-center text-lg-start">
+								    <button class="btn btn-sm btn-secondary px-4 w-100" onclick="backspace()">Clear one</button>
+								</div>
+							  </div>
+							  <p class="mt-2 mb-0 fs-5">Score: <span id="scoreCounter">0</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none fade" id="success-panel">
+					<h3 class="text-center">You did it!</h3>
+					<p>Great work, space cadet. You helped Valentina with her translations!</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+	function updateScoreCounter(num) {
+		$('#scoreCounter')[0].innerText = num;
+		return; 
+	}
+
+	$('document').ready(function(){
+		scoreArray = {
+			{% for question in site.data.codebreaker %}
+			"question-{{ question.english | slugify }}": 0,
+			{% endfor %}
+		}
+		scoreArrayLength = {{ site.data.codebreaker | size }}
+		updateScoreCounter(0);
+	});
+
+	function totalScore() {
+		var score = 0;
+		for (item in scoreArray) {
+			score = score + scoreArray[item]
+		}
+		console.log('Score: ' + score)
+		return score 
+	}
+   
+/*
+- on document launch, set up an array with the id of each element and 0
+- on correct answer, put a 1 in the correct place and remove the question from the DOM
+- use the counter to judge the total
+- when the total hits the length of the array, show the 'congrats' pane
+
+*/
+	function submit() {
+		correctAnswer = $('#carouselCodebreaker .active .answer')[0].outerText 
+		submittedAnswer = $('#textentry')[0].innerText 
+
+		if (correctAnswer == submittedAnswer) {
+			document.getElementById('result').innerHTML = 'Correct!';
+			question = $("#carouselCodebreaker .active .question")[0].outerText.toLowerCase();
+			scoreArray["question-"+question] = 1;
+			score = totalScore() 
+			updateScoreCounter(score);
+			if (score == scoreArrayLength) {
+				$('#codebreaker-wrapper').addClass('d-none').removeClass('show');
+				$('#success-panel').removeClass('d-none').addClass('d-block show');
+			}
+		}
+		else {
+			document.getElementById('result').innerHTML = 'Not quite! Keep trying';
+		}
+		return; 
+	}
+</script>
