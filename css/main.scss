@@ -168,10 +168,21 @@ a.no-col {
 }
 
 .wait-what-col {
-	@extend .col-10, .offset-1, .col-md-8, .offset-md-2, .col-lg-6, .offset-lg-3;
+	@extend .col-10, .offset-1, .col-md-6, .offset-md-3, .col-lg-4, .offset-lg-4;
+}
+.now-booking, .card.wait-what {
+	@extend .border-val-navy, .bg-transparent;
+	border-width: 5px !important;
 }
 .card.wait-what {
-	@extend .bg-val-navy, .mb-4, .ms-2, .text-light;
+	@extend .mb-4, .ms-2, .text-light;
+	.card-header, .card-body {
+		@extend .bg-transparent, .border-0, .text-dark;
+	}
+}
+
+.gradient-background .wait-what {
+	color: white !important;
 }
 
 // 
