@@ -8,7 +8,7 @@
       <ul class="navbar-nav text-center mb-2 mb-lg-0 nav-pills nav-border nav-fill">
         {% assign site_pages = site.content | where: "main-menu", "true" | sort: "order" %}
         {% for p in site_pages %}
-          <li class="nav-item mx-lg-2">
+          <li class="nav-item mx-lg-2 my-auto">
             <a class="nav-link {% if p.permalink == page.url %}active{% endif %}" href="{{ p.permalink | prepend: site.baseurl }}">{{ p.title }}</a>
           </li>
         {% endfor %}
