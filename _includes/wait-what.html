@@ -1,16 +1,16 @@
 {% assign fact = site.data.space-facts | where: "title", include.fact | first %}
 {% if fact and fact != empty %}
 	<div class="card wait-what">
-		<div class="card-header text-center px-0 text-uppercase">
+		<div class="card-header text-center px-0 pb-0 text-uppercase">
 			<h4><img src="{{ site.baseurl }}/static/illustrations/planet.png" alt="Planet illustration" width="50px">&nbsp;Wait, what?</h4>
 		</div>
 		<div class="card-body pt-0">
 			<div class="row text-center">
 				<div class="col-sm {% if include.wrap %}col-lg-12{% endif %} my-auto">
-					<img class="img-fact mb-3" src="{{ fact.picture | prepend: site.baseurl }}" alt="{{ fact.picture_alt_text | default: "Illustration of the text below" }}">
+					<img class="img-fact mb-3 px-0" src="{{ fact.picture | prepend: site.baseurl }}" alt="{{ fact.picture_alt_text | default: "Illustration of the text below" }}">
 				</div>
 				<div class="col h-100 my-auto">
-					<p class="heading text-center">{{ fact.words }}</p>
+					<p class="heading text-center"><small>{{ fact.words }}</small></p>
 				</div>
 			</div>
 		</div>
