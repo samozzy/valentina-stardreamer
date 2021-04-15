@@ -30,11 +30,11 @@
   color: #273032;
 }
 
-.bg-val-navy, .card.wait-what {
+.bg-val-navy {
   background-color: #273032 !important;
 }
 
-.border-val-navy {
+.border-val-navy, .now-booking, .card.wait-what {
   border-color: #273032 !important;
 }
 
@@ -270,7 +270,7 @@ a.no-col, .footer a {
 }
 
 .site-title.display-2 img {
-  width: 100px;
+  width: 125px;
 }
 
 .site-title.navbar-brand {
@@ -339,6 +339,14 @@ a.no-col, .footer a {
 
 .card .card-link:hover, .card .card-link:focus, .card .card-link:active {
   background-color: #63598c;
+}
+
+.now-booking, .card.wait-what {
+  border-width: 5px !important;
+}
+
+.gradient-background .wait-what {
+  color: white !important;
 }
 
 .img-games img {
@@ -1500,7 +1508,7 @@ progress {
     flex: 0 0 auto;
     width: 41.6666666667%;
   }
-  .col-md-6 {
+  .col-md-6, .wait-what-col {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -1508,7 +1516,7 @@ progress {
     flex: 0 0 auto;
     width: 58.3333333333%;
   }
-  .col-md-8, .wait-what-col {
+  .col-md-8 {
     flex: 0 0 auto;
     width: 66.6666666667%;
   }
@@ -1534,10 +1542,10 @@ progress {
   .offset-md-1 {
     margin-left: 8.3333333333%;
   }
-  .offset-md-2, .wait-what-col {
+  .offset-md-2 {
     margin-left: 16.6666666667%;
   }
-  .offset-md-3 {
+  .offset-md-3, .wait-what-col {
     margin-left: 25%;
   }
   .offset-md-4 {
@@ -1662,7 +1670,7 @@ progress {
     flex: 0 0 auto;
     width: 25%;
   }
-  .col-lg-4 {
+  .col-lg-4, .wait-what-col {
     flex: 0 0 auto;
     width: 33.3333333333%;
   }
@@ -1670,7 +1678,7 @@ progress {
     flex: 0 0 auto;
     width: 41.6666666667%;
   }
-  .col-lg-6, .wait-what-col {
+  .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -1707,10 +1715,10 @@ progress {
   .offset-lg-2 {
     margin-left: 16.6666666667%;
   }
-  .offset-lg-3, .wait-what-col {
+  .offset-lg-3 {
     margin-left: 25%;
   }
-  .offset-lg-4 {
+  .offset-lg-4, .wait-what-col {
     margin-left: 33.3333333333%;
   }
   .offset-lg-5 {
@@ -6937,7 +6945,7 @@ textarea.form-control-lg {
   border: 1px solid #dee2e6 !important;
 }
 
-.border-0 {
+.border-0, .card.wait-what .card-header, .card.wait-what .card-body {
   border: 0 !important;
 }
 
@@ -7009,7 +7017,7 @@ textarea.form-control-lg {
   border-color: #fff !important;
 }
 
-.border-0 {
+.border-0, .card.wait-what .card-header, .card.wait-what .card-body {
   border-width: 0 !important;
 }
 
@@ -7787,7 +7795,7 @@ textarea.form-control-lg {
   color: #f8f9fa !important;
 }
 
-.text-dark {
+.text-dark, .card.wait-what .card-header, .card.wait-what .card-body {
   color: #212529 !important;
 }
 
@@ -7871,7 +7879,7 @@ textarea.form-control-lg {
   background-color: #fff !important;
 }
 
-.bg-transparent {
+.bg-transparent, .now-booking, .card.wait-what, .card.wait-what .card-header, .card.wait-what .card-body {
   background-color: transparent !important;
 }
 
