@@ -37,14 +37,19 @@ layout: page
 			</div>
 		</div>
 	</div>
-	<div class="row my-2">
-		<div class="wait-what-col">
+	<div class="row mt-2 mb-4">
+		<div class="col-4 offset-1 text-center">
+			<h4>Ziggy<br><small class="text-muted">Mr Tiddles</small></h4>
+			<p>This is Ziggy's first professional role</p>
+			<img class="w-75" src="https://placekitten.com/500/500">
+		</div>
+		<div class="wait-what col-4 offset-2 my-auto">
 			{% include wait-what.html fact="spaghettification" %}
 		</div>
 	</div>
-	<div class="row row-cols-2 row-cols-lg-3 px-4">
+	<div class="row row-cols-2 px-4">
 		{% for partner in site.data.team[1].partners %}
-			<div class="col">
+			<div class="col mx-auto">
 				<div class="row">
 					{% if partner.logo %}
 					<div class="col-8 offset-2 col-md-4 offset-md-0 mb-2">
@@ -52,7 +57,10 @@ layout: page
 					</div>
 					{% endif %}
 					<div class="col">
-						<h3 {% unless partner.logo %}class="text-center"{% endunless %}>{{ partner.name }}</h3>
+						<h3 {% unless partner.logo %}class="text-center"{% endunless %}>
+							{{ partner.name }}
+							{% if partner.role %}<br><span class="fs-6 text-muted">{{ partner.role }}</span>{% endif %}
+						</h3>
 						{{ partner.about | markdownify }}
 						<p class="text-center"><a href="{{ partner.website }}">More information <i class="fa fa-external-link-alt"></i></a></p>
 					</div>
