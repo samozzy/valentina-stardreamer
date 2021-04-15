@@ -1,6 +1,7 @@
 - pictured:
   - name: El Beaman-Brinklow
     role: Performer & Devisor 
+    website: https://hastetheatre.com/the-company/ 
   - name: Georgia Murphy
     role: Director 
     website: https://www.georgiamurphy.co.uk/
@@ -13,6 +14,7 @@
     website: https://www.caitlinabbott.co.uk/
   - name: Sophie Taylor 
     role: Performer & Devisor
+    website: https://hastetheatre.com/the-company/ 
   - name: Fizz Margereson
     role: Sound Designer 
     website: https://www.fizzmargereson.co.uk/
@@ -21,8 +23,10 @@
     website: https://www.heatherralph.co.uk/
   - name: Jesse Dupré
     role: Performer & Devisor 
+    website: https://hastetheatre.com/the-company/ 
   - name: Valeria Ross 
     role: Performer & Devisor
+    website: https://hastetheatre.com/the-company/ 
 - partners:
   - name: Mouths of Lions 
     logo: /static/img/logos/mol.png
@@ -34,7 +38,7 @@
     website: https://hastetheatre.com/
     about: |
       Haste Theatre is a multilingual, physical theatre partnership of 4 female identifying artists. With a focus on celebrating the liveness of performance and a physical complicite amongst an ensemble, our work celebrates the ephemerality of theatre and bodies together in a room. We pull together a myriad of styles and influences that best serve the stories we tell in order to create joyful, unique experiences.
-  - name: Iain Gibbons Arts 
+  - name: Iain Gibbons Art
     role: Website Illustrations & Poster 
     website: https://www.iaingibbons.co.uk/artwork
 - special_thanks:
