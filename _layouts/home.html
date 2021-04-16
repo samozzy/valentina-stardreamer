@@ -15,33 +15,30 @@ layout: default
         </div>
       </div>
       <div class="row">
-        <div class="col-3 mb-auto">
-          {% comment %}<img class="w-50 mx-auto d-block" src="{{ site.baseurl }}/static/illustrations/earth.png" alt="Earth graphic">{% endcomment %}
-        </div>
-        <div class="col-9 col-lg-6">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
    				<p class="lead fs-3 text-center">{{ site.description }}</p>
           <div class="card my-4 purple-shadow now-booking">
             <div class="card-body">
               <h3 class="text-uppercase text-center">Now booking:</strong></h3>
-              <p class="text-center">The Place, Bedford &mdash; Saturday 17th April @ 11am | <a href="https://www.theplacebedford.org.uk/shows/valentina-star-dreamer/">Get Tickets <i class="fa fa-external-link-alt" aria-hidden="true"></i></a></p>
+              <p class="text-center mb-0">The Place, Bedford &mdash; Saturday 17th April @ 11am | <a href="https://www.theplacebedford.org.uk/shows/valentina-star-dreamer/">Get Tickets <i class="fa fa-external-link-alt" aria-hidden="true"></i></a></p>
             </div>
           </div>
-          <p class="small text-center">Or email us to bring Valentina to your venue or school <br>
+          <p class="small text-center pt-3 mb-2">Or email us to bring Valentina to your venue or school <br>
             <a href="mailto:bookings@valentinastardreamer.co.uk" class="text-decoration-none fw-bold">bookings@valentinastardreamer.co.uk</a>
           </p>
         </div><!-- /Copy and book -->
-        <div class="col-3">
+        <div class="col-8 offset-2 col-md-6 offset-md-3 col-lg-3 offset-lg-0"><!-- Val -->
           <img src="{{ site.baseurl }}/static/illustrations/valentina/floating_alpha.gif" class="img-fluid" alt="Animation of Valentina floating in space">
-        </div>
+        </div><!-- /Val -->
       </div><!-- /Title section -->
       <div class="row">
         <div class="w-100">
           <hr class="w-50 mx-auto mb-4">
         </div>
-        <div class="col-6 offset-3 col-lg-3 offset-lg-0 my-lg-auto">
+        <div class="col-8 offset-2 col-md-6 offset-md-3 col-lg-3 offset-lg-0 my-lg-auto">
           {% include wait-what.html fact="diamonds" wrap="true" %}
         </div>
-        <div class="col-12 col-md-8 offset-2 offset-lg-0">
+        <div class="col-12 col-md-8 offset-md-2 offset-lg-0">
           <div class="content-block px-4">
             {{ content | markdownify }}
           </div>
@@ -50,17 +47,25 @@ layout: default
     </div>
     <div class="container-fluid bg-val-skyblue py-4 shadow-lg">
       <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <div class="col-12 col-md-7 col-lg-6 offset-lg-2">
           <h2 class="text-center">About the Show</h2>
           <p class="lead"><strong>Valentina Star Dreamer</strong> was created in our homes for those in their homes.</p>
           <p>This is a live interactive Zoom show. For the best experience of the show please watch on a laptop or desktop computer, instead of a tablet or phone.</p>
           <p>The show operates through Zoom, please also ensure you have downloaded the latest version of Zoom and it is fully updated to at least version 5.6.0 (April 2021). You can do this from the <a href="https://zoom.us/download/" class="text-decoration-none">Zoom website</a>.</p>
           <p>You will be sent a link to the Zoom Meeting on the day of the performance you book for.</p>
           <p>If you have any questions or worries about enjoying the show, you can email us on <a href="mailto:bookings@valentinastardreamer.co.uk" class="text-decoration-none">bookings@valentinastardreamer.co.uk</a></p>
-          <p class="text-center"><a class="btn btn-primary w-75" href="{{ site.baseurl }}/static/info-pack.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i>&nbsp;Download the technical instructions (pdf)</a></p>
+        </div>
+        <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-3 pt-md-5 mb-4 mb-md-0">
+          <p class="text-center"><a class="btn btn-primary w-75 btn-lg shadow-lg" href="{{ site.baseurl }}/static/info-pack.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i>&nbsp;Download the technical instructions (pdf)</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-7 col-lg-6 offset-lg-2">
           <h2 class="text-center">Before the Show</h2>
           <p class="lead">Download your Universe Pack below, packed full of secret missions, space games and fun space facts.</p>
-          <p class="text-center"><a class="btn btn-primary w-75" href="{{ site.baseurl }}/static/universe-pack.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i>&nbsp;Download the Universe Pack (pdf)</a></p>
+        </div>
+        <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-3 pt-md-5 mb-4 mb-md-0">
+          <p class="text-center"><a class="btn btn-primary w-75 btn-lg shadow-lg" href="{{ site.baseurl }}/static/universe-pack.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i>&nbsp;Download the Universe Pack (pdf)</a></p>
         </div>
       </div>
     </div>
