@@ -1,8 +1,8 @@
 ---
 layout: home 
-permalink: /home/
+permalink: /
 main-menu: "true"
-title: Home
+title: 'Home'
 ---
 
 Valentina, the first woman in history to go into outer space needs your help to complete her mission!
