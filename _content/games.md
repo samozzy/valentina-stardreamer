@@ -20,8 +20,9 @@ Attention all space cadets! Can you complete these secret missions?
 
 [<i class="fa fa-file-pdf" aria-hidden="true"></i> You can also download it to print and play at home]({{site.baseurl}}/static/games/crossword.pdf)
 
-<div class="ratio ratio-1x1 w-50 mx-auto my-3">
-  <iframe height="100%" width="auto" frameborder="0" src="https://crosswordlabs.com/embed/space-travel-11"></iframe>
+<div class="mx-auto my-3">
+  <iframe class="crossword" frameborder="0" src="https://crosswordlabs.com/embed/space-travel-11"></iframe><br>
+  <a href="https://crosswordlabs.com/embed/space-travel-11" target="_blank">Open the crossword fullscreen&nbsp;<i class="fa fa-external-link-alt" aria-hidden="true"></i></a>
 </div>
 
 <div class="wait-what-col">
