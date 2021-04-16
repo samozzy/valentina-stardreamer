@@ -9,7 +9,7 @@
       type="image/png" 
       href="/static/favicon.png">
 
-    <link rel="stylesheet" href="/css/main.css?cachebust=202104161246">
+    <link rel="stylesheet" href="/css/main.css?cachebust=202104161315">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -83,14 +83,14 @@
 	<div class="col-12">
 		<div class="card mb-4">
 			<div class="card-header">
-				<h2>Can you help Valentina's Russian spelling?</h2>
+				<h2>Can you help Valentina translate Russian?</h2>
 			</div>
 			<div class="card-body">
 				<div class="container-fluid fade show" id="codebreaker-wrapper">
 					<div class="row">
 						<div class="col-12">
-							<p class="lead">Use the Russian keyboard to translate from phonetic Russian to Cyrillic</p>
-							<p class="small">Some English letter combinations are represented using just 1 Cyrillic character!</p>
+							<p class="lead">Use the Russian keyboard to enter the Cyrillic letters from the phonetic Russian to reveal the English translation!</p>
+							<p class="small">Some letter combinations are represented using just 1 Cyrillic character!</p>
 						</div>
 					</div>
 					<div class="row g-0">
@@ -101,8 +101,12 @@
 									<div class="carousel-item active" id="question-space">
 										<div class="w-100 d-block">
 											<p>1 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Space</span><br />
+											<p class="lead" id="phonetic-kosmos">
 												<strong>Russian (phonetic):</strong>&nbsp;Kosmos
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-space">
+												<strong>English:</strong>&nbsp;<span class="question">Space</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Космос</span>
 											</p>
 											<span class="d-none answer">космос</span>
 										</div>
@@ -111,8 +115,12 @@
 									<div class="carousel-item " id="question-astronaut">
 										<div class="w-100 d-block">
 											<p>2 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Astronaut</span><br />
+											<p class="lead" id="phonetic-kosmonavt">
 												<strong>Russian (phonetic):</strong>&nbsp;Kosmonavt
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-astronaut">
+												<strong>English:</strong>&nbsp;<span class="question">Astronaut</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Космонавт</span>
 											</p>
 											<span class="d-none answer">космонавт</span>
 										</div>
@@ -121,8 +129,12 @@
 									<div class="carousel-item " id="question-valentina">
 										<div class="w-100 d-block">
 											<p>3 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Valentina</span><br />
+											<p class="lead" id="phonetic-valentina">
 												<strong>Russian (phonetic):</strong>&nbsp;Valentina
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-valentina">
+												<strong>English:</strong>&nbsp;<span class="question">Valentina</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Валентина</span>
 											</p>
 											<span class="d-none answer">валентина</span>
 										</div>
@@ -131,8 +143,12 @@
 									<div class="carousel-item " id="question-star">
 										<div class="w-100 d-block">
 											<p>4 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Star</span><br />
+											<p class="lead" id="phonetic-zvezda">
 												<strong>Russian (phonetic):</strong>&nbsp;Zvezda
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-star">
+												<strong>English:</strong>&nbsp;<span class="question">Star</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Звезда</span>
 											</p>
 											<span class="d-none answer">звезда</span>
 										</div>
@@ -141,8 +157,12 @@
 									<div class="carousel-item " id="question-planet">
 										<div class="w-100 d-block">
 											<p>5 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Planet</span><br />
+											<p class="lead" id="phonetic-planeta">
 												<strong>Russian (phonetic):</strong>&nbsp;Planeta
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-planet">
+												<strong>English:</strong>&nbsp;<span class="question">Planet</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Планета</span>
 											</p>
 											<span class="d-none answer">планета</span>
 										</div>
@@ -151,8 +171,12 @@
 									<div class="carousel-item " id="question-rocket">
 										<div class="w-100 d-block">
 											<p>6 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Rocket</span><br />
+											<p class="lead" id="phonetic-raketa">
 												<strong>Russian (phonetic):</strong>&nbsp;Raketa
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-rocket">
+												<strong>English:</strong>&nbsp;<span class="question">Rocket</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Ракета</span>
 											</p>
 											<span class="d-none answer">ракета</span>
 										</div>
@@ -161,8 +185,12 @@
 									<div class="carousel-item " id="question-launch">
 										<div class="w-100 d-block">
 											<p>7 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Launch</span><br />
+											<p class="lead" id="phonetic-spusk">
 												<strong>Russian (phonetic):</strong>&nbsp;Spusk
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-launch">
+												<strong>English:</strong>&nbsp;<span class="question">Launch</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Спуск</span>
 											</p>
 											<span class="d-none answer">спуск</span>
 										</div>
@@ -171,8 +199,12 @@
 									<div class="carousel-item " id="question-russia">
 										<div class="w-100 d-block">
 											<p>8 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Russia</span><br />
+											<p class="lead" id="phonetic-rossiya">
 												<strong>Russian (phonetic):</strong>&nbsp;Rossiya
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-russia">
+												<strong>English:</strong>&nbsp;<span class="question">Russia</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Россия</span>
 											</p>
 											<span class="d-none answer">россия</span>
 										</div>
@@ -181,8 +213,12 @@
 									<div class="carousel-item " id="question-training">
 										<div class="w-100 d-block">
 											<p>9 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Training</span><br />
+											<p class="lead" id="phonetic-trenirovka">
 												<strong>Russian (phonetic):</strong>&nbsp;Trenirovka
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-training">
+												<strong>English:</strong>&nbsp;<span class="question">Training</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Тренировка</span>
 											</p>
 											<span class="d-none answer">тренировка</span>
 										</div>
@@ -191,8 +227,12 @@
 									<div class="carousel-item " id="question-mum">
 										<div class="w-100 d-block">
 											<p>10 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Mum</span><br />
+											<p class="lead" id="phonetic-mama">
 												<strong>Russian (phonetic):</strong>&nbsp;Mama
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-mum">
+												<strong>English:</strong>&nbsp;<span class="question">Mum</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Мама</span>
 											</p>
 											<span class="d-none answer">мама</span>
 										</div>
@@ -201,8 +241,12 @@
 									<div class="carousel-item " id="question-moon">
 										<div class="w-100 d-block">
 											<p>11 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Moon</span><br />
+											<p class="lead" id="phonetic-luna">
 												<strong>Russian (phonetic):</strong>&nbsp;Luna
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-moon">
+												<strong>English:</strong>&nbsp;<span class="question">Moon</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Луна</span>
 											</p>
 											<span class="d-none answer">луна</span>
 										</div>
@@ -211,8 +255,12 @@
 									<div class="carousel-item " id="question-earth">
 										<div class="w-100 d-block">
 											<p>12 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Earth</span><br />
+											<p class="lead" id="phonetic-zemlya">
 												<strong>Russian (phonetic):</strong>&nbsp;Zemlya
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-earth">
+												<strong>English:</strong>&nbsp;<span class="question">Earth</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Земля</span>
 											</p>
 											<span class="d-none answer">земля</span>
 										</div>
@@ -221,8 +269,12 @@
 									<div class="carousel-item " id="question-atmosphere">
 										<div class="w-100 d-block">
 											<p>13 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Atmosphere</span><br />
+											<p class="lead" id="phonetic-atmosfera">
 												<strong>Russian (phonetic):</strong>&nbsp;Atmosfera
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-atmosphere">
+												<strong>English:</strong>&nbsp;<span class="question">Atmosphere</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Атмосфера</span>
 											</p>
 											<span class="d-none answer">атмосфера</span>
 										</div>
@@ -231,8 +283,12 @@
 									<div class="carousel-item " id="question-mars">
 										<div class="w-100 d-block">
 											<p>14 / 14</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">Mars</span><br />
+											<p class="lead" id="phonetic-mars">
 												<strong>Russian (phonetic):</strong>&nbsp;Mars
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-mars">
+												<strong>English:</strong>&nbsp;<span class="question">Mars</span><br />
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">Марс</span>
 											</p>
 											<span class="d-none answer">марс</span>
 										</div>
@@ -594,7 +650,6 @@
 		for (item in scoreArray) {
 			score = score + scoreArray[item]
 		}
-		console.log('Score: ' + score)
 		return score 
 	}
    
@@ -608,8 +663,10 @@
 	function submit() {
 		correctAnswer = $('#carouselCodebreaker .active .answer')[0].outerText 
 		submittedAnswer = $('#textentry')[0].innerText 
+		englishTranslation = $('#carouselCodebreaker .active .english-translation')
 
 		if (correctAnswer == submittedAnswer) {
+			englishTranslation.removeClass('d-none');
 			document.getElementById('result').innerHTML = 'Correct!';
 			question = $("#carouselCodebreaker .active .question")[0].outerText.toLowerCase();
 			scoreArray["question-"+question] = 1;
@@ -679,7 +736,8 @@
 
   <h1 id="download-these-to-play-at-home">Download these to play at home!</h1>
 
-  <p>You can either print them out and use pens and pencils, or fill them in digitally using your mouse or touch screen.</p>
+  <p>You can either print them out and use pens and pencils, or fill them in digitally using your mouse or touch screen.<br />
+Click on an image to download it.</p>
 
   <div class="row img-games mb-4">
   <div class="col-12 col-md-6">
