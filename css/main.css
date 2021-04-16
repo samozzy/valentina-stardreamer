@@ -270,7 +270,13 @@ a.no-col, .footer a {
 }
 
 .site-title.display-2 img {
-  width: 125px;
+  width: 80px;
+}
+
+@media only screen and (min-width: 998px) {
+  .site-title.display-2 img {
+    width: 125px;
+  }
 }
 
 .site-title.navbar-brand {
