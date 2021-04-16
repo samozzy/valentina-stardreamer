@@ -2,14 +2,14 @@
 	<div class="col-12">
 		<div class="card mb-4">
 			<div class="card-header">
-				<h2>Can you help Valentina's Russian spelling?</h2>
+				<h2>Can you help Valentina translate Russian?</h2>
 			</div>
 			<div class="card-body">
 				<div class="container-fluid fade show" id="codebreaker-wrapper">
 					<div class="row">
 						<div class="col-12">
-							<p class="lead">Use the Russian keyboard to translate from phonetic Russian to Cyrillic</p>
-							<p class="small">Some English letter combinations are represented using just 1 Cyrillic character!</p>
+							<p class="lead">Use the Russian keyboard to enter the Cyrillic letters from the phonetic Russian to reveal the English translation!</p>
+							<p class="small">Some letter combinations are represented using just 1 Cyrillic character!</p>
 						</div>
 					</div>
 					<div class="row g-0">
@@ -20,8 +20,12 @@
 									<div class="carousel-item {% if forloop.first %}active{% endif %}" id="question-{{ question.english | slugify }}">
 										<div class="w-100 d-block">
 											<p>{{ forloop.index }} / {{ site.data.codebreaker | size }}</p>
-											<p class="lead"><strong>English:</strong>&nbsp;<span class="question">{{ question.english }}</span><br>
+											<p class="lead" id="phonetic-{{ question.russian | slugify }}">
 												<strong>Russian (phonetic):</strong>&nbsp;{{ question.russian }}
+											</p>
+											<p class="lead d-none english-translation text-secondary fw-bold" id="english-{{ question.english | slugify }}">
+												<strong>English:</strong>&nbsp;<span class="question">{{ question.english }}</span><br>
+												<strong>Russian (Cyrillic):</strong>&nbsp;<span class="cyrillic">{{ question.answer }}</span>
 											</p>
 											<span class="d-none answer">{{ question.answer | downcase }}</span>
 										</div>
@@ -101,7 +105,6 @@
 		for (item in scoreArray) {
 			score = score + scoreArray[item]
 		}
-		console.log('Score: ' + score)
 		return score 
 	}
    
@@ -115,8 +118,10 @@
 	function submit() {
 		correctAnswer = $('#carouselCodebreaker .active .answer')[0].outerText 
 		submittedAnswer = $('#textentry')[0].innerText 
+		englishTranslation = $('#carouselCodebreaker .active .english-translation')
 
 		if (correctAnswer == submittedAnswer) {
+			englishTranslation.removeClass('d-none');
 			document.getElementById('result').innerHTML = 'Correct!';
 			question = $("#carouselCodebreaker .active .question")[0].outerText.toLowerCase();
 			scoreArray["question-"+question] = 1;
