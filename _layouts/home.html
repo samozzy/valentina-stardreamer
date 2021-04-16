@@ -76,7 +76,7 @@ layout: default
   			</div>
       </div>
       {% assign site_pages = site.content | where: "main-menu", "true" | where_exp: "page", "page.title!='Home'" | sort: "order" %}
-      <div class="row row-cols-2">
+      <div class="row row-cols-1 row-cols-md-2">
         {% for p in site_pages %}
           <div class="col my-3 mx-auto">
             <div class="card home-card bg-val-purple mx-2 h-100">
