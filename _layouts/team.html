@@ -8,7 +8,7 @@ layout: page
 
 	{{ content | markdownify }} 
 
-	<div class="row mb-4">
+	<div class="row mb-md-4">
 		<div class="col-12 col-lg-6">
 			<img src="{{ site.baseurl }}/static/img/team.png" alt="A Zoom capture of 9 faces, the individual team members of the show" class="img-fluid">
 			<p class="w-75 mx-auto">Valentina Star Dreamer has been made possible thanks to:<br> <a href="https://hastetheatre.com/">Haste Theatre</a>, <a href="https://www.mouthsoflions.co.uk/">Mouths of Lions Theatre</a>, <a href="https://www.theplacebedford.org.uk/">The Place Bedford</a>, and Arts Council England.</p>
@@ -17,7 +17,7 @@ layout: page
 			<div class="row row-cols-2 row-cols-lg-3">
 				{% for person in site.data.team[0].pictured %}
 					<div class="col mb-2 px-4 px-lg-2">
-						<h4 class="mb-1">
+						<h4 class="mb-1 person-name">
 							{{ person.name }}
 							<br>
 							<span class="text-muted">
@@ -37,7 +37,7 @@ layout: page
 			</div>
 		</div>
 	</div>
-	<div class="row mt-2 mb-4">
+	<div class="row mt-md-2 mb-4">
 		<div class="col-10 col-md-8 offset-1 col-lg-4 text-center mb-4 mb-lg-2">
 			<h4>Ziggy<br><small class="text-muted">Mr Tiddles</small></h4>
 			<p>This is Ziggy's first professional role</p>
@@ -47,7 +47,7 @@ layout: page
 			{% include wait-what.html fact="spaghettification" %}
 		</div>
 	</div>
-	<div class="row row-cols-2 px-4">
+	<div class="row row-cols-1 row-cols-md-2 px-4">
 		{% for partner in site.data.team[1].partners %}
 			<div class="col mx-auto mb-4">
 				<div class="row">
