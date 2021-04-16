@@ -37,7 +37,7 @@ layout: page
 				<div class="card rounded-3 shadow">
 					<div class="card-header bg-val-purple text-light {% unless event.body or event.img %}rounded-2{% endunless %}">
 						<p class="lead fs-3 my-auto">
-							<img src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic" width="40px">&nbsp;{{ event.title }}
+							<img src="{{ site.baseurl }}/static/illustrations/star.png" alt="Star graphic" class="timeline-star">&nbsp;{{ event.title }}
 						</p>
 					</div>
 					{% if event.body or event.img %}
