@@ -1,4 +1,4 @@
-- year: 1937-06-06
+- year: 1937-03-06
   title: Valentina Tereshkova Born
 - year: 1953-06-01
   title: Textile Factory 
@@ -7,7 +7,7 @@
     Very soon she became interested in skydiving and requested her registration at the local Aeroclub.
 - year: 1959-05-21
   title: First jump! 
-  img: /static/valentina/skydive.png
+  img: /static/valentina/1959-05-21.jpg
   body: |
     Valentina loved skydiving and made her first jump at age 22, on May 21, 1959; accumulated about 90 jumps.
 - year: 1960-01-01
@@ -16,16 +16,51 @@
   body: |
     More than 400 candidates applied to be the first women in space. 
     Valentina and 4 other women were selected for the training programme.
+- year: 1960-01-01
+  title: Training Programme 
+  img: /static/valentina/centrifuge.jpg
+  body: The training included weightlessness flights, insulation tests, centrifuge tests, rocket theory, engineering spacecraft, 120 parachute jumps and pilot training in Mig fighter jets.
 - year: 1962-11-01
-  title: Intensive Training 
-  body: |
-    The group spent several months in intensive training, which ended in November 1962.
-    The training included weightlessness flights, insulation tests, centrifuge tests, rocket theory, engineering spacecraft, 120 parachute jumps and pilot training in Mig fighter jets.
+  title: Training Ends
+  img: /static/valentina/1962-11.png
 - year: 1963-06-16
   title: Into Space 
+  img: /static/valentina/1963-06-16.jpg
   body: |
     Valentina was 26 when she went into space on June 16th 1963  in Vostok 6
+- year: 1963-06-16
+  title: Valentina is the only woman to date to ever complete a solo mission 
+  img: /static/valentina/valentina-solo.jpg
+- year: 1963-06-16
+  title: Yelena Tereshkova
+  img: /static/valentina/yelena-yuri.jpg
+  body: Valentina’s mother Yelena didn’t know her daughter was an Astronaut until a few days after her launch mission. 
 - year: 1963-06-19
+  img: /static/valentina/valentina-orbit.jpg 
   title: Valentina spent 2 days, 22 hours and 50 minutes  in space and orbited the Earth 48 times. 
+- year: 1963-06-19
+  img: /static/valentina/vostok-recovery.png
+  title: Recovery of Valentina Tereshkova and Vostok-6 after landing in a field
+- year: 1963-06-19
+  img: /static/valentina/valentina-landing-flowers.jpg
+  title: Valentina made history &  changed the course of space travel. Many female Astronauts followed in her footsteps. 
+- year: 1963-06-19
+  img: /static/valentina/crater-tereshkova.jpg
+  title: Valentina has a  crater on the moon named after her - crater Tereshkova
+- year: 1963-06-19
+  img: /static/valentina/valentina-yuri.jpg
+  title: Yuri Gagarin was the first human to go into outer space and was Valentina’s hero. They soon became friends. 
+- year: 1963-11-03
+  img: /static/valentina/1963-11-03.jpg
+  title: Valentina married fellow cosmonaut Andrian Nikolayev
+- year: 1964-06-08
+  title: Elena Andrianovna Nikolaeva-Tereshkova Born
+  img: /static/valentina/1964-06-08.jpg
+  body: They had a daughter Elena, who was the first child in the world whose mother and father were both cosmonauts
 - year: 2021-03-06
-  title: Valentina Tereshkova turned 84 yrs old. 
+  title: Valentina Tereshkova turned 84 years old. 
+  img: /static/valentina/2021-03-06.jpg 
+- year: 2021-03-06
+  title: Valentina is still a powerful public speaker 
+  img: /static/valentina/valentina-conference.jpg
+  body: Valentina has been an indefatigable fighter of the Russian women’s movement, advocating for Soviet women to have the same opportunities as men.

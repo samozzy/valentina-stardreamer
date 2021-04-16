@@ -19,14 +19,21 @@ layout: page
 
 {% assign events = site.data.valentina | sort: "year" %}
 
-<div class="container timeline-wrapper">
+<div class="container timeline-wrapper mt-4">
 	<div class="timeline"></div>
+	{% assign prev_year = '' %}
 	{% for event in events %}
 		<div class="row mb-5">
-			<div class="col-3 col-md-4 text-end pe-3 pe-md-5">
-				<h2 class="mb-0">{{ event.year | date_to_long_string }}</h2>
+			{% comment %}<div class="timeline-dot"><i class="fa fa-circle text-secondary fa-lg"></i></div>
+			It would be quite nice to have a dot for each item on the vertical timeline, can't quite get the alignment right on all viewports just yet.
+			{% endcomment %}
+			<div class="col-4 text-end pe-3 pe-md-5 timeline-date">
+				{% unless event.year == prev_year %}
+					<h2>{{ event.year | date_to_long_string }}</h2>
+				{% endunless %}
+				{% assign prev_year = event.year %}
 			</div>
-			<div class="col-9 col-md-8 ps-3 ps-md-5" id="timeline-{{ event.title | slugify }}">
+			<div class="col-8 ps-3 ps-md-5 timeline-item" id="timeline-{{ event.title | slugify }}">
 				<div class="card rounded-3 shadow">
 					<div class="card-header bg-val-purple text-light {% unless event.body or event.img %}rounded-2{% endunless %}">
 						<p class="lead fs-3 my-auto">
@@ -37,12 +44,12 @@ layout: page
 						<div class="card-body">
 							<div class="row">
 								{% if event.body and event.body != empty %}
-									<div class="col">
+									<div class="col order-2 order-lg-1 content-block">
 										{{ event.body | markdownify }}
 									</div>
 								{% endif %}
 								{% if event.img and event.img != empty %}
-									<div class="col-4">
+									<div class="col-10 offset-1 {% if event.body %}col-lg-4 offset-lg-0 order-1 order-lg-2 mx-lg-2 text-lg-end{% endif %} mx-auto  text-center  mb-3">
 										{% assign image_source = event.img | slice: 0 %}
 										{% assign image_local = false %}
 										{% if image_source == '/' %}{% assign image_local = true %}{% endif %}

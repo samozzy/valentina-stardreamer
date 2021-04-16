@@ -1,5 +1,8 @@
 .timeline-wrapper {
 	position: relative;
+	.row {
+		position: relative;
+	}
 }
 .timeline {
 	position: absolute;
@@ -9,7 +12,18 @@
 	width: 5px;
 	top: 0;
 	left: 33.5%;
-	@media only screen and (max-width: 768px) {
-		left: 25%;
+}
+.timeline-dot {
+	position: absolute;
+	left: 32%;
+	top: 1.2rem;
+	width: fit-content !important;
+}
+.timeline-date {
+	padding-top: 0.6rem !important;
+	h2 {
+		@media only screen and (max-width:768px) {
+			font-size: 1.2rem !important;
+		}
 	}
 }
