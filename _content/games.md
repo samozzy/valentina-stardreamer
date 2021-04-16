@@ -30,7 +30,8 @@ Attention all space cadets! Can you complete these secret missions?
 
 # Download these to play at home! 
 
-You can either print them out and use pens and pencils, or fill them in digitally using your mouse or touch screen.
+You can either print them out and use pens and pencils, or fill them in digitally using your mouse or touch screen.  
+Click on an image to download it.
 
 <div class="row img-games mb-4">
   <div class="col-12 col-md-6">
