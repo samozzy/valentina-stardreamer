@@ -387,6 +387,10 @@ a.no-col, .footer a {
   position: relative;
 }
 
+.timeline-wrapper .row {
+  position: relative;
+}
+
 .timeline {
   position: absolute;
   height: 100%;
@@ -397,9 +401,20 @@ a.no-col, .footer a {
   left: 33.5%;
 }
 
+.timeline-dot {
+  position: absolute;
+  left: 32%;
+  top: 1.2rem;
+  width: fit-content !important;
+}
+
+.timeline-date {
+  padding-top: 0.6rem !important;
+}
+
 @media only screen and (max-width: 768px) {
-  .timeline {
-    left: 25%;
+  .timeline-date h2, .timeline-date .h2 {
+    font-size: 1.2rem !important;
   }
 }
 
