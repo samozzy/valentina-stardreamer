@@ -1,6 +1,7 @@
 ---
 title: Space Games
 main-menu: "true" 
+featured: "true"
 order: 2
 permalink: /games/
 image: /static/illustrations/pages/games.png

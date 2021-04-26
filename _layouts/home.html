@@ -75,7 +75,7 @@ layout: default
           <h2>Find out more...</h2>
   			</div>
       </div>
-      {% assign site_pages = site.content | where: "main-menu", "true" | where_exp: "page", "page.title!='Home'" | sort: "order" %}
+      {% assign site_pages = site.content | where: "featured", "true" | sort: "order" %}
       <div class="row row-cols-1 row-cols-md-2">
         {% for p in site_pages %}
           <div class="col my-3 mx-auto">
@@ -91,7 +91,7 @@ layout: default
             </div>
           </div>
         {% endfor %}
-        <div class="wait-what my-auto">
+        <div class="wait-what my-auto mx-auto">
           {% include wait-what.html fact="sky-hat" %}
         </div>
   		</div>
