@@ -309,6 +309,20 @@ a.no-col, .footer a {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .valentina-navbar .navbar-nav {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .valentina-navbar .nav-item {
+    font-size: 11px;
+  }
+  .valentina-navbar .nav-item .nav-link {
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+  }
+}
+
 #valentinaNavbar .nav-border {
   border-bottom: 2px solid #7A186C;
   padding-bottom: 0.5rem;
