@@ -21,7 +21,8 @@ layout: default
             <div class="card my-4 purple-shadow now-booking">
               <div class="card-body">
                 <h3 class="text-uppercase text-center">Now booking:</strong></h3>
-                {% for show in site.data.shows %}
+                {% assign upcoming_shows = site.data.shows | sort: "start_date" %}
+                {% for show in upcoming_shows %}
                   <p class="text-center mb-0">{{ show.venue }} &mdash; {{ show.start_date | date: "%A %e %B" }}{% if show.end_date and show.end_date != show.start_date %} to {{ show.end_date | date: "%A %e %B" }}{% endif %} {{ show.show_times | prepend: "@ " }} {% if show.ticket_link %}| <a href="{{ show.ticket_link }}" target="_blank">Get Tickets <i class="fa fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}</p>
                 {% endfor %}
               </div>
