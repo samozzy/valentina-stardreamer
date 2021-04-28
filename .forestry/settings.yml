@@ -8,8 +8,7 @@ sections:
   path: _content
   label: Content
   create: all
-  match: "**/*"
-  exclude: "*html"
+  match: "*md"
 - type: directory
   path: _about
   label: About
