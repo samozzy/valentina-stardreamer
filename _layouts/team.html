@@ -24,12 +24,12 @@ layout: page
 							<br>
 							<span class="text-muted">
 								{{ person.role }}
-								{% if person.subrole %}<br>
+								{% if person.subrole and person.subrole != empty %}<br>
 									<small class="fs-6">({{ person.subrole }})</small>
 								{% endif %}
 							</span>
 						</h4>
-						{% if person.website %}
+						{% if person.website and person.website != empty %}
 							<a href="{{ person.website }}">
 								<small>More information <i class="fa fa-external-link-alt"></i></small>
 							</a>
@@ -53,7 +53,7 @@ layout: page
 		{% for partner in site.data.team.partners %}
 			<div class="col mx-auto mb-4">
 				<div class="row">
-					{% if partner.logo %}
+					{% if partner.logo and partner.logo != empty %}
 					<div class="col-8 offset-2 col-md-4 offset-md-0 mb-2">
 						<img src="{{ partner.logo | prepend: site.baseurl }}" alt="{{ partner.name }} logo" class="w-75">
 					</div>
@@ -61,10 +61,12 @@ layout: page
 					<div class="col">
 						<h3 {% unless partner.logo %}class="text-center"{% endunless %}>
 							{{ partner.name }}
-							{% if partner.role %}<br><span class="fs-6 text-muted">{{ partner.role }}</span>{% endif %}
+							{% if partner.role and partner.role != empty %}<br><span class="fs-6 text-muted">{{ partner.role }}</span>{% endif %}
 						</h3>
 						{{ partner.about | markdownify }}
-						<p class="text-center"><a href="{{ partner.website }}">More information <i class="fa fa-external-link-alt"></i></a></p>
+						{% if partner.website and partner.website != empty %}
+							<p class="text-center"><a href="{{ partner.website }}">More information <i class="fa fa-external-link-alt"></i></a></p>
+						{% endif %}
 					</div>
 				</div>
 			</div>
@@ -76,7 +78,7 @@ layout: page
 	<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 px-4">
 		{% for partner in site.data.team.special_thanks %}
 			<div class="col">
-				<h5>{{ partner.name }}{% if partner.role %}<br><span class="text-muted fs-6">{{ partner.role }}</span>{% endif %}</h5>
+				<h5>{{ partner.name }}{% if partner.role and partner.role != empty %}<br><span class="text-muted fs-6">{{ partner.role }}</span>{% endif %}</h5>
 			</div>
 		{% endfor %}
 	</div>
