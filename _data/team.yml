@@ -1,4 +1,4 @@
-- pictured:
+pictured:
   - name: Elly Beaman-Brinklow
     role: Performer & Devisor 
     website: https://hastetheatre.com/the-company/ 
@@ -27,7 +27,7 @@
   - name: Valeria Ross 
     role: Performer & Devisor
     website: https://hastetheatre.com/the-company/ 
-- partners:
+partners:
   - name: Mouths of Lions 
     logo: /static/img/logos/mol.png
     website: https://www.mouthsoflions.co.uk/
@@ -41,7 +41,7 @@
   - name: Iain Gibbons Art
     role: Website Illustrations & Poster 
     website: https://www.iaingibbons.co.uk/artwork
-- special_thanks:
+special_thanks:
   - name: Carolyn Fin 
     role: Astronaut Consultant 
   - name: Helena Bates 
