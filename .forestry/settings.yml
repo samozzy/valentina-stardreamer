@@ -4,15 +4,39 @@ auto_deploy: false
 admin_path: admin
 webhook_url: 
 sections:
+- type: document
+  path: _data/shows.yml
+  label: Upcoming Shows
+  match: "**/*"
 - type: directory
   path: _content
   label: Content
   create: all
   match: "*md"
+- type: document
+  path: _data/valentina.yml
+  label: Valentina Timeline
+  match: "**/*"
 - type: directory
   path: _about
-  label: About
+  label: About The Show
   create: all
+  match: "**/*"
+- type: document
+  path: _data/site.yml
+  label: Extra Copy
+  match: "**/*"
+- type: document
+  path: _data/team.yml
+  label: Team
+  match: "**/*"
+- type: document
+  path: _data/socials.yml
+  label: Social Media Links
+  match: "**/*"
+- type: document
+  path: _data/space-facts.yml
+  label: Wait, What?!
   match: "**/*"
 upload_dir: static
 public_path: "/static"
