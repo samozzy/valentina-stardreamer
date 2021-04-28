@@ -49,30 +49,27 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="container-fluid bg-val-skyblue py-4 shadow-lg">
-      <div class="row mb-md-4">
-        <div class="col-12 col-md-7 col-lg-6 offset-lg-2">
-          <h2 class="text-center">About the Show</h2>
-          <p class="lead"><strong>Valentina Star Dreamer</strong> was created in our homes for those in their homes.</p>
-          <p>This is a live interactive Zoom show. For the best experience of the show please watch on a laptop or desktop computer, instead of a tablet or phone.</p>
-          <p>The show operates through Zoom, please also ensure you have downloaded the latest version of Zoom and it is fully updated to at least version 5.6.0 (April 2021). You can do this from the <a href="https://zoom.us/download/" class="text-decoration-none">Zoom website</a>.</p>
-          <p>You will be sent a link to the Zoom Meeting on the day of the performance you book for.</p>
-          <p>If you have any questions or worries about enjoying the show, you can email us on <a href="mailto:bookings@valentinastardreamer.co.uk" class="text-decoration-none">bookings@valentinastardreamer.co.uk</a></p>
+    {% if site.about %}
+      <div class="container-fluid bg-val-skyblue py-4 shadow-lg">
+        {% for item in site.about %}
+        <div class="row mb-md-4">
+          <div class="col-12 col-md-7 col-lg-6 offset-lg-2 text-decoration-none content-block">
+            <h2 class="text-center">{{ item.title }}</h2>
+            {{ item.content | markdownify }}
+          </div>
+          {% if item.download_link %}
+          <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-3 pt-md-5 mb-4 mb-md-0">
+            <p class="text-center">
+              <a class="btn btn-primary w-75 btn-lg shadow-lg" href="{{ item.download_link }}">
+                {% if item.file_format %}<i class="fa fa-file-{{ item.file_format }}" aria-hidden="true"></i>&nbsp;{% endif %}{{ item.download_title | default: "Download" }} {{ item.file_format | prepend: "(" | append: ")"}}
+              </a>
+            </p>
+          </div>
+          {% endif %}
         </div>
-        <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-3 pt-md-5 mb-4 mb-md-0">
-          <p class="text-center"><a class="btn btn-primary w-75 btn-lg shadow-lg" href="{{ site.baseurl }}/static/info-pack.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i>&nbsp;Download the technical instructions (pdf)</a></p>
-        </div>
+        {% endfor %}
       </div>
-      <div class="row">
-        <div class="col-12 col-md-7 col-lg-6 offset-lg-2">
-          <h2 class="text-center">Before the Show</h2>
-          <p class="lead">Download your Universe Pack below, packed full of secret missions, space games and fun space facts.</p>
-        </div>
-        <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-3 pt-md-5 mb-4 mb-md-0">
-          <p class="text-center"><a class="btn btn-primary w-75 btn-lg shadow-lg" href="{{ site.baseurl }}/static/universe-pack.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i>&nbsp;Download the Universe Pack (pdf)</a></p>
-        </div>
-      </div>
-    </div>
+    {% endif %}
     <div class="container py-4">
       <div class="row">
   			<div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
