@@ -26,3 +26,5 @@ fields:
       schema:
         format: markdown
     label: body
+pages:
+- _data/valentina.yml
