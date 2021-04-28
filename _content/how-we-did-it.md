@@ -16,7 +16,7 @@ On this page is a snippet of what we did and learnt!
 <div class="row">
   <div class="col-12 col-lg-7" markdown="1">
 
-1. To keep research sessions quick & smooth  think a list of topics/people/events, take one each- you have 15 mins  then find out as much as you can - Add everything to a shared google doc.
+1. To keep research sessions quick & smooth, think of a list of topics/people/events, take one each- you have 15 mins to then find out as much as you can - Add everything to a shared google doc.
 2. Before starting a writing session, pick from a list of writing forms that could work for the show, for us this was; a list of themes we'd collated from research, and from one character's perspective or during a certain moment in Valentina's story. Everyone had 5 minutes to free-write then present back. Kept everything in a shared google doc so that when we came to writing the actual show we could quickly pop back and use phrases or paragraphs we liked.
 3. Start off focusing on playing with using the camera, & everyday objects like toilet rolls, blankets, cheese graters, coffee makers. It's on such a small scale with the camera focusing so closely on the objects they can appear massive and you'd be surprised how many rocket-esqued items you can find in your kitchen filmed from strange angles!
 
@@ -69,7 +69,7 @@ Staring at a screen all day can be quite exhausting! We figured out some strateg
 * Put start and end times to meetings 
 
 We did a total of 3 weeks on zoom with two work-in-progress show at the end. 
-We started off by playing around with objects we had to hand and then moved into building the set and custom. 
+We started off by playing around with objects we had to hand and then moved into building the set and costumes. 
 
 
 ## Equipment 
