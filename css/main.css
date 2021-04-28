@@ -261,6 +261,14 @@ a.no-col, .footer a {
   text-decoration: none !important;
 }
 
+.text-decoration-none a {
+  text-decoration: none !important;
+}
+
+.text-decoration-none a:hover {
+  text-decoration: underline !important;
+}
+
 .site-title {
   transform: rotate(-5deg) !important;
 }
