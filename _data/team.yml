@@ -1,54 +1,73 @@
+---
 pictured:
-  - name: Elly Beaman-Brinklow
-    role: Performer & Devisor 
-    website: https://hastetheatre.com/the-company/ 
-  - name: Georgia Murphy
-    role: Director 
-    website: https://www.georgiamurphy.co.uk/
-  - name: Sam Osborne 
-    role: Broadcast Technician & Web Design
-    website: https://samosborne.me/
-  - name: Caitlin Abbott
-    role: Designer 
-    subrole: Set, Costume, Animation, Puppetry
-    website: https://www.caitlinabbott.co.uk/
-  - name: Sophie Taylor 
-    role: Performer & Devisor
-    website: https://hastetheatre.com/the-company/ 
-  - name: Fizz Margereson
-    role: Sound Designer 
-    website: https://www.fizzmargereson.co.uk/
-  - name: Heather Ralph 
-    role: Producer 
-    website: https://www.heatherralph.co.uk/
-  - name: Jesse Dupré
-    role: Performer & Devisor 
-    website: https://hastetheatre.com/the-company/ 
-  - name: Valeria Ross 
-    role: Performer & Devisor
-    website: https://hastetheatre.com/the-company/ 
+- name: Elly Beaman-Brinklow
+  role: Performer & Devisor
+  website: https://hastetheatre.com/the-company/
+  subrole: ''
+- name: Georgia Murphy
+  role: Director
+  website: https://www.georgiamurphy.co.uk/
+  subrole: ''
+- name: Sam Osborne
+  role: Broadcast Technician & Web Design
+  website: https://samosborne.me/
+  subrole: ''
+- name: Caitlin Abbott
+  role: Designer
+  subrole: Set, Costume, Animation, Puppetry
+  website: https://www.caitlinabbott.co.uk/
+- name: Sophie Taylor
+  role: Performer & Devisor
+  website: https://hastetheatre.com/the-company/
+  subrole: ''
+- name: Fizz Margereson
+  role: Sound Designer
+  website: https://www.fizzmargereson.co.uk/
+  subrole: ''
+- name: Heather Ralph
+  role: Producer
+  website: https://www.heatherralph.co.uk/
+  subrole: ''
+- name: Jesse Dupré
+  role: Performer & Devisor
+  website: https://hastetheatre.com/the-company/
+  subrole: ''
+- name: Valeria Ross
+  role: Performer & Devisor
+  website: https://hastetheatre.com/the-company/
+  subrole: ''
 partners:
-  - name: Mouths of Lions 
-    logo: /static/img/logos/mol.png
-    website: https://www.mouthsoflions.co.uk/
-    about: |
-     Mouths of Lions are an award winning group of artists dedicated to telling stories that fill us and their audiences with joy. We create through play and tell stories that celebrate big imaginations. Our work is silly, playful, anarchic, curious, surreal, tragic, irreverent and fun. 
-  - name: HASTE Theatre 
-    logo: /static/img/logos/haste.jpg 
-    website: https://hastetheatre.com/
-    about: |
-      Haste Theatre is a multilingual, physical theatre partnership of 4 female identifying artists. With a focus on celebrating the liveness of performance and a physical complicite amongst an ensemble, our work celebrates the ephemerality of theatre and bodies together in a room. We pull together a myriad of styles and influences that best serve the stories we tell in order to create joyful, unique experiences.
-  - name: Iain Gibbons Art
-    role: Website Illustrations & Poster 
-    website: https://www.iaingibbons.co.uk/artwork
-special_thanks:
-  - name: Carolyn Fin 
-    role: Astronaut Consultant 
-  - name: Helena Bates 
-    role: Planetary Science researcher, PhD Student in Meteorites, Natural History Museum
-  - name: Maya Domb
-    role: Educational Consultant
-  - name: Alex Levene 
-    role: The Place Bedford 
-  - name: Arts Council England 
+- name: Mouths of Lions
+  logo: "/static/img/logos/mol.png"
+  website: https://www.mouthsoflions.co.uk/
+  about: "Mouths of Lions are an award winning group of artists dedicated to telling
+    stories that fill us and their audiences with joy. We create through play and
+    tell stories that celebrate big imaginations. Our work is silly, playful, anarchic,
+    curious, surreal, tragic, irreverent and fun. \n"
+- name: HASTE Theatre
+  logo: "/static/img/logos/haste.jpg"
+  website: https://hastetheatre.com/
+  about: 'Haste Theatre is a multilingual, physical theatre partnership of 4 female
+    identifying artists. With a focus on celebrating the liveness of performance and
+    a physical complicite amongst an ensemble, our work celebrates the ephemerality
+    of theatre and bodies together in a room. We pull together a myriad of styles
+    and influences that best serve the stories we tell in order to create joyful,
+    unique experiences.
 
+'
+- name: Iain Gibbons Art
+  role: Website Illustrations & Poster
+  website: https://www.iaingibbons.co.uk/artwork
+  logo: ''
+  about: ''
+special_thanks:
+- name: Carolyn Fin
+  role: Astronaut Consultant
+- name: Helena Bates
+  role: Planetary Science researcher, PhD Student in Meteorites, Natural History Museum
+- name: Maya Domb
+  role: Educational Consultant
+- name: Alex Levene
+  role: The Place Bedford
+- name: Arts Council England
+  role: ''
