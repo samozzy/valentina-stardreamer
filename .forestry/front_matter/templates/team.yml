@@ -12,6 +12,11 @@ fields:
   - type: text
     name: role
     label: role
+  - name: subrole
+    type: text
+    config:
+      required: false
+    label: subrole
   - type: text
     name: website
     label: website
