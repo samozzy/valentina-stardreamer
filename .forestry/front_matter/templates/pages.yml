@@ -5,15 +5,19 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: main-menu
+- name: main-menu
+  type: boolean
   label: main-menu
-- type: text
-  name: featured
+  description: Whether this page appears in the main header menu
+- name: featured
+  type: boolean
   label: featured
+  description: Whether this page is in the list of pages on the bottom of the homepage
 - type: number
   name: order
   label: order
+  description: The order this page sits in the header menu and the featured list of
+    pages on the homepage
 - type: text
   name: permalink
   label: permalink
