@@ -71,6 +71,12 @@ a.no-col {
 	color:inherit !important;
 	text-decoration: none !important;
 }
+.text-decoration-none a {
+	text-decoration: none !important;
+	&:hover {
+		text-decoration: underline !important;
+	}
+}
 
 .site-title {
 	transform: rotate(-5deg) !important;
