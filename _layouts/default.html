@@ -40,8 +40,8 @@
           {{ site.data.site.footer | markdownify }}
         </div>
         <div class="col-12 col-lg-3 text-center text-lg-end mt-2">
-          {% assign haste_socials = site.data.socials[0].haste %}
-          {% assign mol_socials = site.data.socials[1].mol %}
+          {% assign haste_socials = site.data.socials.haste %}
+          {% assign mol_socials = site.data.socials.mol %}
           <p class="text-muted fw-bold mb-2">Haste Theatre {% for social in haste_socials %}<a href="{{ social.href }}" title="{{ social.title }}" class="link-light"><i class="fab fa-lg fa-{{ social.title | downcase }}"></i></a>&nbsp;{% endfor %}</p>
           <p class="text-muted fw-bold mb-2">Mouths of Lions {% for social in mol_socials %}<a href="{{ social.href }}" title="{{ social.title }}" class="link-light"><i class="fab fa-lg fa-{{ social.title | downcase }}"></i></a>&nbsp;{% endfor %}</p>
           <p class="small mb-0 text-muted"><a href="https://web.samosborne.me/" class="no-col">Web Development by Sam Osborne</a></p>
