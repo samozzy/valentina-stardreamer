@@ -1,0 +1,14 @@
+---
+label: Timeline
+hide_body: true
+fields:
+- type: field_group_list
+  name: Valentina
+  label: Valentina
+  fields:
+  - type: datetime
+    name: year
+    label: year
+  - type: text
+    name: title
+    label: title
