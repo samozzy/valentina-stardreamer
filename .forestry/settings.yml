@@ -9,6 +9,7 @@ sections:
   label: Content
   create: all
   match: "**/*"
+  exclude: "*html"
 - type: directory
   path: _about
   label: About
