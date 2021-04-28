@@ -37,7 +37,7 @@
           <img src="{{ site.baseurl }}/static/img/logos/ace-white.png" alt="Arts Council England Logo" class="img-ace">
         </div>
         <div class="col-12 col-lg-6 text-center fw-light text-val-white my-auto">
-          <p class="mb-0">Valentina Star Dreamer has been made possible thanks to:<br> <a href="https://hastetheatre.com/">Haste Theatre</a>, <a href="https://www.mouthsoflions.co.uk/">Mouths of Lions</a>, <a href="https://www.theplacebedford.org.uk/">The Place Bedford</a>, and Arts Council England.</p>
+          {{ site.data.site.footer | markdownify }}
         </div>
         <div class="col-12 col-lg-3 text-center text-lg-end mt-2">
           {% assign haste_socials = site.data.socials[0].haste %}

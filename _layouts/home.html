@@ -16,7 +16,7 @@ layout: default
       </div>
       <div class="row">
         <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-   				<p class="lead fs-3 text-center">{{ site.description }}</p>
+   				<p class="lead fs-3 text-center">{{ site.data.site.description | default: site.description }}</p>
           {% if site.data.shows and site.data.shows != empty %}
             <div class="card my-4 purple-shadow now-booking">
               <div class="card-body">
