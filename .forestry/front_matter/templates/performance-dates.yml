@@ -21,3 +21,4 @@ fields:
   - type: text
     name: ticket_link
     label: ticket_link
+    description: Put a link in here, don't forget the https:// at the beginning!
