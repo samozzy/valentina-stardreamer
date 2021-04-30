@@ -5,10 +5,6 @@ admin_path: admin
 webhook_url: 
 sections:
 - type: document
-  path: _data/codebreaker.csv
-  label: Codebreaker
-  match: "**/*"
-- type: document
   path: _data/shows.yml
   label: Upcoming Shows
 - type: directory
@@ -36,6 +32,10 @@ sections:
 - type: document
   path: _data/space-facts.yml
   label: Wait, What?!
+- type: document
+  path: _data/codebreaker.csv
+  label: Codebreaker
+  match: "**/*"
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
