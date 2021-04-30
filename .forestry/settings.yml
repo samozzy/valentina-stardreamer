@@ -5,6 +5,10 @@ admin_path: admin
 webhook_url: 
 sections:
 - type: document
+  path: _data/codebreaker.csv
+  label: Codebreaker
+  match: "**/*"
+- type: document
   path: _data/shows.yml
   label: Upcoming Shows
 - type: directory
